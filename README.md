@@ -53,6 +53,30 @@ Lichen‑Universe est le point d’entrée unifié de l’écosystème Lichen : 
 - [FC-496 Visualizer](https://fc496.quantum-lichen.io) (Lien fonctionel avenir) - Interactive cell editor
 - [CEML Monitor](https://ceml.quantum-lichen.io) (Lien fonctionel avenir) - Real-time entropy tracking
 
+# 🌌 Lichen Universe
+**Un écosystème pour les systèmes cognitifs auto-organisés.**
+
+## 🗺️ Carte des Projets
+   **Projet**         | **Description**                          | **Statut**       | **Lien**                          |
+ |--------------------|------------------------------------------|------------------|-----------------------------------|
+ | **Lichen-OS.1.3**  | Noyau théorique (CEML, FC-496, π-Time)   | Théorie         | [GitHub](https://github.com/quantum-lichen/Lichen-OS.1.3) |
+ | **lichen-OS**      | Implémentation Rust (fc496, hse, uict)   | Alpha           | [GitHub](https://github.com/quantum-lichen/lichen-OS) |
+ | **FC-496**          | Format de données universel             | Prototypage     | [GitHub](https://github.com/quantum-lichen/FC-496) |
+ | **π-Time**          | Système temporel universel              | Démo            | [GitHub](https://github.com/quantum-lichen/pi-Time) |
+ | **Symbiose-Terminal**| Interface humaine                       | Bêta           | [GitHub](https://github.com/quantum-lichen/Symbiose-Terminal) |
+
+## 🚀 Comment Commencer ?
+1. **Lis le [glossaire](docs/glossary.md)** pour comprendre les concepts clés.
+2. **Essaie les démos** dans [`demos/`](demos/).
+3. **Rejoins la communauté** sur [Discord](#).
+
+## 📖 Documentation
+- [Glossaire](docs/glossary.md) : CEML, FC-496, π-Time, etc.
+- [Architecture](docs/architecture/) : Schémas Mermaid/PlantUML.
+- [Whitepapers](docs/whitepapers/) : Théorie complète.
+
+## 🤝 Contribuer
+Consulte le [guide de contribution](community/CONTRIBUTING.md).
 
 ## 🌟 La Vision : Réinventer l'Informatique pour la Symbiose
 
