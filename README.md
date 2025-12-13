@@ -54,6 +54,32 @@ ALL my project in ONE place
 
 ---
 
+#### B. La Configuration Rust : `Cargo.toml`
+*Emplacement : Racine du projet*
+
+```toml
+[workspace]
+members = [
+    "core/fc496",
+    "core/hse",
+    "core/uict",
+    "core/ceml",
+    "core/lichen_net",
+    "apps/lichen_cli",
+]
+resolver = "2"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rayon = "1.8"       # Parallélisme massif
+tokio = { version = "1.0", features = ["full"] }
+ndarray = "0.15"    # Calculs tensoriels
+sha2 = "0.10"
+criterion = "0.5"   # Benchmarks
+```
+
+---
 
 ## 🚀 Installation & Démarrage
 
