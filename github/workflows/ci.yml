@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, bcp/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+    - name: Build
+      run: |
+        cd fc496_rust
+        cargo build --release
+    - name: Run tests
+      run: |
+        cd fc496_rust
+        cargo test --release
+    - name: Run benchmarks (smoke)
+      run: |
+        echo "Smoke benchmark step (optional heavy jobs disabled on CI)"

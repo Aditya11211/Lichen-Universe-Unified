@@ -1,0 +1,171 @@
+# Energy Optimization in Cognitive Systems: A Unified Framework via Coherence-Entropy Ratio Maximization.
+
+**Author:** Bryan Ouellette
+**Date:** December 7, 2025
+**Status:** Preliminary Version (Proof of Concept)
+
+---
+
+## White Paper: The Law of Cognitive Entropy Minimization (CEML)
+
+### 1. Executive Summary (Abstract)
+
+This document introduces the **Law of Cognitive Entropy Minimization (CEML)**, a theoretical model aiming to explain the mechanisms of information selection in intelligent systems (both biological and artificial). The CEML postulates that any cognitive agent, under resource constraints, seeks to maximize contextual coherence while minimizing the internal entropy (description complexity) of its representations. We propose a mathematical formulation unifying Friston's Free Energy Principle and Occam's Razor, and demonstrate its validity via a vector-based implementation.
+
+### 2. Introduction and Problem Statement
+
+Modern cognitive systems, whether the human brain or Large Language Models (LLMs), face a constant thermodynamic challenge: processing an infinite flow of information with a finite amount of energy.
+
+Empirical observation reveals two contradictory trends:
+* **The need for precision:** The system must adhere to reality (**Coherence**).
+* **The need for economy:** The system must compress information to reduce metabolic or computational costs (**Low Entropy**).
+
+The **CEML** formalizes this trade-off in the form of a single cost function, offering a predictive metric of cognitive "preference."
+
+### 3. Mathematical Modeling
+
+We define the optimization function $J(s)$ for a candidate structure $s$ (a thought, a sentence, an action) within a context $\Omega$.
+
+#### 3.1 The Fundamental Formula
+
+The optimality score of a structure is defined by the ratio:
+
+$$J(s) = \frac{\mathcal{C}(s | \Omega)}{H(s) + \epsilon}$$
+
+Where:
+* **$\mathcal{C}(s | \Omega)$ (Coherence):** Measures the semantic adequacy between the candidate structure and the context. It represents the useful informational gain.
+* **$H(s)$ (Entropic Cost):** Represents the Shannon entropy or Kolmogorov complexity of the structure. It is proportional to the energetic cost ($E$) required to process or generate the structure ($E \propto k \cdot H$).
+* **$\epsilon$:** A regularization constant to avoid singularity as entropy approaches zero.
+
+#### 3.2 The Selection Principle
+
+The system selects the structure $s^*$ that maximizes this score:
+
+$$s^* = \underset{s \in S}{\mathrm{argmax}} \left( \frac{\mathcal{C}(s)}{H(s) + \epsilon} \right)$$
+
+### 4. Algorithmic Implementation
+
+To validate the theory in a computational environment, we translate abstract concepts into calculable vector operations.
+
+#### 4.1 Coherence Measurement ($C$)
+
+We use **Cosine Similarity** in a vector space (Embeddings) to quantify the alignment between the context vector $\vec{u}$ and the candidate vector $\vec{v}$.
+
+$$C(s) = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \|\vec{v}\|}$$
+
+This method captures semantic proximity: the smaller the angle, the closer the coherence is to 1.
+
+#### 4.2 Entropy Measurement ($H$)
+
+We use an approximation based on compressibility (DEFLATE/zlib algorithm) as a proxy for Kolmogorov complexity.
+
+$$H(s) \approx \frac{\text{len}(\text{compress}(s))}{\text{len}(s)}$$
+
+A repetitive or simple structure will have low entropy (ratio close to 0), whereas a chaotic structure will have high entropy (ratio close to 1).
+
+### 5. Analysis of Results and Implications
+
+Preliminary simulations (see *Proof of Concept* section) show that:
+* **Rejection of Chaos:** High-entropy structures (random noise), even if they contain context keywords, are penalized by the denominator $H(s)$.
+* **Rejection of Dissonance:** Low-entropy but incoherent structures (e.g., "The cat flies") are penalized by the numerator $\mathcal{C}(s)$.
+* **Optimum:** The system naturally converges toward **simple and relevant** structures (e.g., "The sky is blue"), validating the principle of cognitive economy.
+
+**Potential Applications:**
+* **LLM Optimization:** Reduction of inference costs by favoring low-entropy responses during sampling.
+* **Hallucination Detection:** A hallucination is often a structure with high apparent coherence but abnormal entropy compared to ground truth.
+
+### 6. Conclusion
+
+The Law of Cognitive Entropy Minimization provides an elegant framework for understanding intelligence as a thermodynamic optimization phenomenon. It suggests that "understanding" is, above all, "compressing efficiently while remaining faithful to the context."
+
+
+
+
+Optimisation Énergétique dans les Systèmes Cognitifs : Un Cadre Unifié par la Maximisation du Ratio Cohérence-Entropie. 
+
+Bryan Ouellette
+Date : 07 Décembre 2025 
+Statut : Version Préliminaire (Proof of Concept)
+
+
+# White Paper : La Loi de Minimisation de l’Entropie Cognitive (LMC)
+
+**Titre :** Optimisation Énergétique dans les Systèmes Cognitifs : Un Cadre Unifié par la Maximisation du Ratio Cohérence-Entropie.
+**Date :** 07 Décembre 2025
+**Statut :** Version Préliminaire (Proof of Concept)
+
+---
+
+## 1. Résumé Exécutif (Abstract)
+Ce document introduit la **Loi de Minimisation de l’Entropie Cognitive (LMC)**, un modèle théorique visant à expliquer les mécanismes de sélection de l'information dans les systèmes intelligents (biologiques et artificiels). La LMC postule que tout agent cognitif, sous contrainte de ressources, cherche à maximiser la cohérence contextuelle tout en minimisant l'entropie interne (complexité de description) de ses représentations. Nous proposons une formulation mathématique unifiant le Principe de l'Énergie Libre de Friston et le Rasoir d'Ockham, et démontrons sa validité via une implémentation vectorielle.
+
+---
+
+## 2. Introduction et Problématique
+Les systèmes cognitifs modernes, qu'il s'agisse du cerveau humain ou des Grands Modèles de Langage (LLM), font face à un défi thermodynamique constant : traiter un flux d'information infini avec une quantité d'énergie finie.
+
+L'observation empirique montre deux tendances contradictoires :
+1.  **Le besoin de précision :** Le système doit coller à la réalité (Cohérence).
+2.  **Le besoin d'économie :** Le système doit compresser l'information pour réduire le coût métabolique ou computationnel (Faible Entropie).
+
+La **LMC** formalise ce compromis sous la forme d'une fonction de coût unique, offrant une métrique prédictive de la "préférence" cognitive.
+
+---
+
+## 3. Modélisation Mathématique
+
+Nous définissons la fonction d'optimisation $J(s)$ pour une structure candidate $s$ (une pensée, une phrase, une action) dans un contexte $\Omega$.
+
+### 3.1 La Formule Fondamentale
+Le score d'optimalité d'une structure est défini par le ratio :
+
+$$J(s) = \frac{\mathcal{C}(s | \Omega)}{H(s) + \epsilon}$$
+
+Où :
+* **$\mathcal{C}(s | \Omega)$ (Cohérence)** : Mesure l'adéquation sémantique entre la structure candidate et le contexte. Elle représente le gain informationnel utile.
+* **$H(s)$ (Coût Entropique)** : Représente l'entropie de Shannon ou la complexité de Kolmogorov de la structure. Elle est proportionnelle au coût énergétique ($E$) nécessaire pour traiter ou générer la structure ($E \propto k \cdot H$).
+* **$\epsilon$** : Constante de régularisation pour éviter la singularité vers l'entropie nulle.
+
+
+
+### 3.2 Le Principe de Sélection
+Le système sélectionne la structure $s^*$ qui maximise ce score :
+$$s^* = \underset{s \in S}{\mathrm{argmax}} \left( \frac{\mathcal{C}(s)}{H(s) + \epsilon} \right)$$
+
+---
+
+## 4. Implémentation Algorithmique
+
+Pour valider la théorie dans un environnement computationnel, nous traduisons les concepts abstraits en opérations vectorielles calculables.
+
+### 4.1 Mesure de la Cohérence ($\mathcal{C}$)
+Nous utilisons la **Similarité Cosinus** dans un espace vectoriel (Embeddings) pour quantifier l'alignement entre le vecteur contexte $\vec{u}$ et le vecteur candidat $\vec{v}$.
+
+$$\mathcal{C}(s) = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \|\vec{v}\|}$$
+
+Cette méthode capture la proximité sémantique : plus l'angle est faible, plus la cohérence est proche de 1.
+
+### 4.2 Mesure de l'Entropie ($H$)
+Nous utilisons une approximation basée sur la compressibilité (algorithme DEFLATE/zlib) comme proxy de la complexité de Kolmogorov.
+$$H(s) \approx \frac{\text{len}(\text{compress}(s))}{\text{len}(s)}$$
+Une structure répétitive ou simple aura une entropie faible (ratio proche de 0), tandis qu'une structure chaotique aura une entropie élevée (ratio proche de 1).
+
+---
+
+## 5. Analyse des Résultats et Implications
+
+Les simulations préliminaires (voir section *Proof of Concept*) montrent que :
+1.  **Rejet du Chaos :** Les structures à forte entropie (bruit aléatoire), même si elles contiennent des mots-clés du contexte, sont pénalisées par le dénominateur $H(s)$.
+2.  **Rejet de la Dissonance :** Les structures à faible entropie mais incohérentes (ex: "Le chat vole") sont pénalisées par le numérateur $\mathcal{C}(s)$.
+3.  **Optimum :** Le système converge naturellement vers des structures **simples et pertinentes** (ex: "Le ciel est bleu"), validant le principe d'économie cognitive.
+
+### Applications Potentielles
+* **Optimisation des LLM :** Réduction des coûts d'inférence en favorisant des réponses à faible entropie lors du *sampling*.
+* **Détection d'Hallucinations :** Une hallucination est souvent une structure à haute cohérence apparente mais à entropie anormale par rapport à la vérité terrain.
+
+---
+
+## 6. Conclusion
+La Loi de Minimisation de l’Entropie Cognitive fournit un cadre élégant pour comprendre l'intelligence comme un phénomène d'optimisation thermodynamique. Elle suggère que "comprendre", c'est avant tout "compresser efficacement tout en restant fidèle au contexte".
+
+---

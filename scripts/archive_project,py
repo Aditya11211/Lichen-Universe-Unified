@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# Simple archiver for reproducibility (adds timestamped ZIP of repo snapshot)
+
+import os
+import zipfile
+from datetime import datetime
+
+def archive_project(out_dir="archives", version="v1.0"):
+    ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    name = f"hse_fc496_{version}_{ts}.zip"
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, name)
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+        for root, dirs, files in os.walk("."):
+            # exclude .git and archives folder
+            if ".git" in root.split(os.sep):
+                continue
+            if root.startswith("./" + out_dir) or root == out_dir:
+                continue
+            for f in files:
+                if f.endswith(".pyc") or f.endswith(".pyo"):
+                    continue
+                filepath = os.path.join(root, f)
+                arcname = os.path.relpath(filepath, ".")
+                z.write(filepath, arcname)
+    print("Archived to", path)
+    return path
+
+if __name__ == "__main__":
+    archive_project()

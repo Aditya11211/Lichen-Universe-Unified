@@ -1,0 +1,13 @@
+[package]
+name = "fc496_core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bryan Ouellette <bryan@example.com>"]
+description = "Prototype FC-496 (Cellule Fractale 496 bits) - minimal Rust implementation"
+license = "MIT"
+repository = "https://github.com/quantum-lichen/UICT-CEML-H-Scale"
+
+[dependencies]
+sha2 = "0.10"
+bitvec = "1.0"
+lazy_static = "1.4"

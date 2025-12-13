@@ -1,0 +1,77 @@
+# White Paper : La Loi de Minimisation de l’Entropie Cognitive (LMC)
+
+**Titre :** Optimisation Énergétique dans les Systèmes Cognitifs : Un Cadre Unifié par la Maximisation du Ratio Cohérence-Entropie.
+**Date :** 07 Décembre 2025
+**Statut :** Version Préliminaire (Proof of Concept)
+
+---
+
+## 1. Résumé Exécutif (Abstract)
+
+Ce document introduit la **Loi de Minimisation de l’Entropie Cognitive (LMC)**, un modèle théorique visant à expliquer les mécanismes de sélection de l'information dans les systèmes intelligents (biologiques et artificiels).
+
+La LMC postule que tout agent cognitif, sous contrainte de ressources, cherche à maximiser la cohérence contextuelle tout en minimisant l'entropie interne (complexité de description) de ses représentations. Nous proposons une formulation mathématique unifiant le **Principe de l'Énergie Libre** de Friston et le **Rasoir d'Ockham**, et démontrons sa validité via une implémentation vectorielle.
+
+## 2. Introduction et Problématique
+
+Les systèmes cognitifs modernes, qu'il s'agisse du cerveau humain ou des Grands Modèles de Langage (LLM), font face à un défi thermodynamique constant : traiter un flux d'information infini avec une quantité d'énergie finie.
+
+L'observation empirique montre deux tendances contradictoires :
+* **Le besoin de précision :** Le système doit coller à la réalité (**Cohérence**).
+* **Le besoin d'économie :** Le système doit compresser l'information pour réduire le coût métabolique ou computationnel (**Faible Entropie**).
+
+La LMC formalise ce compromis sous la forme d'une fonction de coût unique, offrant une métrique prédictive de la "préférence" cognitive.
+
+## 3. Modélisation Mathématique
+
+Nous définissons la fonction d'optimisation $J(s)$ pour une structure candidate $s$ (une pensée, une phrase, une action) dans un contexte $\Omega$.
+
+### 3.1 La Formule Fondamentale
+Le score d'optimalité d'une structure est défini par le ratio :
+
+$$J(s) = \frac{\mathcal{C}(s | \Omega)}{H(s) + \epsilon}$$
+
+Où :
+* **$\mathcal{C}(s | \Omega)$ (Cohérence) :** Mesure l'adéquation sémantique entre la structure candidate et le contexte. Elle représente le gain informationnel utile.
+* **$H(s)$ (Coût Entropique) :** Représente l'entropie de Shannon ou la complexité de Kolmogorov de la structure. Elle est proportionnelle au coût énergétique ($E$) nécessaire pour traiter ou générer la structure :
+    $$E \propto k \cdot H(s)$$
+* **$\epsilon$ :** Constante de régularisation pour éviter la singularité vers l'entropie nulle.
+
+### 3.2 Le Principe de Sélection
+Le système sélectionne la structure $s^*$ qui maximise ce score :
+
+$$s^* = \underset{s \in \mathcal{S}}{\mathrm{argmax}} \left( \frac{\mathcal{C}(s)}{H(s) + \epsilon} \right)$$
+
+## 4. Implémentation Algorithmique
+
+Pour valider la théorie dans un environnement computationnel, nous traduisons les concepts abstraits en opérations vectorielles calculables.
+
+### 4.1 Mesure de la Cohérence ($C$)
+Nous utilisons la **Similarité Cosinus** dans un espace vectoriel (*Embeddings*) pour quantifier l'alignement entre le vecteur contexte $\vec{u}$ et le vecteur candidat $\vec{v}$.
+
+$$C(s) = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \|\vec{v}\|}$$
+
+Cette méthode capture la proximité sémantique : plus l'angle est faible, plus la cohérence est proche de 1.
+
+### 4.2 Mesure de l'Entropie ($H$)
+Nous utilisons une approximation basée sur la compressibilité (algorithme DEFLATE/zlib) comme proxy de la complexité de Kolmogorov.
+
+$$H(s) \approx \frac{\text{len}(\text{compress}(s))}{\text{len}(s)}$$
+
+Une structure répétitive ou simple aura une entropie faible (ratio proche de 0), tandis qu'une structure chaotique aura une entropie élevée (ratio proche de 1).
+
+## 5. Analyse des Résultats et Implications
+
+Les simulations préliminaires (voir section *Proof of Concept*) montrent que :
+
+1.  **Rejet du Chaos :** Les structures à forte entropie (bruit aléatoire), même si elles contiennent des mots-clés du contexte, sont pénalisées par le dénominateur $H(s)$.
+2.  **Rejet de la Dissonance :** Les structures à faible entropie mais incohérentes (ex: "Le chat vole") sont pénalisées par le numérateur $C(s)$.
+3.  **Optimum :** Le système converge naturellement vers des structures **simples et pertinentes** (ex: "Le ciel est bleu"), validant le principe d'économie cognitive.
+
+### Applications Potentielles
+* **Optimisation des LLM :** Réduction des coûts d'inférence en favorisant des réponses à faible entropie lors du *sampling*.
+* **Détection d'Hallucinations :** Une hallucination est souvent une structure à haute cohérence apparente mais à entropie anormale par rapport à la vérité terrain.
+
+## 6. Conclusion
+
+La Loi de Minimisation de l’Entropie Cognitive fournit un cadre élégant pour comprendre l'intelligence comme un phénomène d'optimisation thermodynamique. Elle suggère que "comprendre", c'est avant tout "compresser efficacement tout en restant fidèle au contexte".
