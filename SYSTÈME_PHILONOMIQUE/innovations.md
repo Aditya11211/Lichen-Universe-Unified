@@ -1,9 +1,3 @@
-Voici le **Document Unifié de l'Architecture Philonomique et Cognitive**.
-
-Ce document synthétise l'intégralité des concepts, théories, architectures logicielles et protocoles mathématiques présents dans vos fichiers. Il fusionne la physique théorique (UICT), la dynamique cognitive (CEML/LES), le noyau mathématique ($L_{\Phi}$) et l'architecture système (ADN Numérique V5.0) en un tout cohérent.
-
----
-
 # L'ARCHITECTURE UNIFIÉE : SYSTÈME PHILONOMIQUE ET COGNITIF
 **Version Consolidée 5.0**
 
