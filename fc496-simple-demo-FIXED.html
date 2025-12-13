@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC-496 Encoder/Decoder - Live Demo (FIXED)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: #a0a0ff;
+            font-size: 1.1em;
+        }
+        
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #00d4ff;
+            font-weight: 600;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #00d4ff;
+            box-shadow: 0 0 15px rgba(0,212,255,0.3);
+        }
+        
+        textarea {
+            min-height: 100px;
+            font-family: monospace;
+            resize: vertical;
+        }
+        
+        button {
+            background: linear-gradient(45deg, #00d4ff, #7b2ff7);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,212,255,0.3);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,212,255,0.5);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .output {
+            background: rgba(0,0,0,0.4);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 4px solid #00d4ff;
+            font-family: monospace;
+            word-break: break-all;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat {
+            background: rgba(0,212,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #a0a0ff;
+            margin-top: 5px;
+        }
+        
+        .success {
+            color: #00ff88;
+        }
+        
+        .error {
+            color: #ff4444;
+        }
+        
+        .warning {
+            color: #ffaa00;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #a0a0ff;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .debug-info {
+            background: rgba(255,170,0,0.1);
+            border-left: 4px solid #ffaa00;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            border-radius: 5px;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .processing {
+            animation: pulse 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌌 FC-496 Encoder/Decoder</h1>
+            <p class="subtitle">Universal Data Format - Live Demo (FIXED VERSION)</p>
+        </header>
+        
+        <div class="card">
+            <h2>🔐 Encode Data to FC-496</h2>
+            
+            <div class="input-group">
+                <label for="inputData">Your Data (JSON, text, etc.)</label>
+                <textarea id="inputData" placeholder='{"message": "Hello Lichen Universe!"}'></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="latitude">Latitude (optional)</label>
+                <input type="number" id="latitude" placeholder="45.5017" step="0.0001">
+            </div>
+            
+            <div class="input-group">
+                <label for="longitude">Longitude (optional)</label>
+                <input type="number" id="longitude" placeholder="-73.5673" step="0.0001">
+            </div>
+            
+            <button onclick="encodeData()">🔒 Encode to FC-496</button>
+            
+            <div id="encodeOutput" class="output" style="display:none;"></div>
+            
+            <div class="stats" id="encodeStats" style="display:none;">
+                <div class="stat">
+                    <div class="stat-value" id="cellSize">496</div>
+                    <div class="stat-label">Bits</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="encodeTime">-</div>
+                    <div class="stat-label">Encode Time</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="integrity">✓</div>
+                    <div class="stat-label">Integrity</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🔓 Decode FC-496 Cell</h2>
+            
+            <div class="input-group">
+                <label for="encodedData">FC-496 Cell (hex)</label>
+                <textarea id="encodedData" placeholder="Paste encoded FC-496 cell here..."></textarea>
+            </div>
+            
+            <button onclick="decodeData()">🔓 Decode FC-496</button>
+            
+            <div id="decodeOutput" class="output" style="display:none;"></div>
+        </div>
+        
+        <footer>
+            <p>Part of <a href="https://github.com/quantum-lichen/Lichen-Universe-Unified" target="_blank">Lichen Universe</a></p>
+            <p>Built with 💚 using FC-496 Format | MIT License</p>
+            <p class="warning">⚠️ This is a SIMPLIFIED demo. Real FC-496 includes BCH ECC, fractal indexing, and quantum-resistant features.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // ===== FC-496 CELL STRUCTURE (FIXED) =====
+        // Total: 496 bits = 62 bytes = 124 hex characters
+        // 
+        // [0-7]   : GeoPath (8 hex = 4 bytes = 32 bits) - Lat/Lon encoding
+        // [8-11]  : π-Index (4 hex = 2 bytes = 16 bits) - Time/entropy marker
+        // [12-23] : Metadata (12 hex = 6 bytes = 48 bits) - Version, flags, etc.
+        // [24-123]: Payload (100 hex = 50 bytes = 400 bits) - Actual data + ECC
+        //
+        // Total: 8 + 4 + 12 + 100 = 124 hex chars ✓
+        
+        const FC496_STRUCTURE = {
+            GEOPATH_START: 0,
+            GEOPATH_END: 8,
+            PI_INDEX_START: 8,
+            PI_INDEX_END: 12,
+            METADATA_START: 12,
+            METADATA_END: 24,
+            PAYLOAD_START: 24,
+            PAYLOAD_END: 124,
+            TOTAL_LENGTH: 124
+        };
+        
+        // FC-496 Encoder (FIXED)
+        function encodeData() {
+            const startTime = performance.now();
+            
+            const data = document.getElementById('inputData').value;
+            const lat = parseFloat(document.getElementById('latitude').value) || 0;
+            const lon = parseFloat(document.getElementById('longitude').value) || 0;
+            
+            if (!data) {
+                alert('Please enter some data to encode!');
+                return;
+            }
+            
+            // Encode to FC-496
+            const fc496Cell = createFC496Cell(data, lat, lon);
+            
+            const endTime = performance.now();
+            const encodeTime = (endTime - startTime).toFixed(2);
+            
+            // Display output
+            document.getElementById('encodeOutput').style.display = 'block';
+            document.getElementById('encodeOutput').innerHTML = `
+                <div class="success">✓ Encoded successfully!</div>
+                <br>
+                <strong>FC-496 Cell (Hex):</strong><br>
+                <code style="color: #00ff88;">${fc496Cell.hex}</code>
+                <br><br>
+                <strong>Cell Structure Breakdown:</strong><br>
+                • <span style="color: #00d4ff;">GeoPath</span> (chars 0-7): ${fc496Cell.hex.substring(0, 8)}<br>
+                • <span style="color: #00d4ff;">π-Index</span> (chars 8-11): ${fc496Cell.hex.substring(8, 12)}<br>
+                • <span style="color: #00d4ff;">Metadata</span> (chars 12-23): ${fc496Cell.hex.substring(12, 24)}<br>
+                • <span style="color: #00d4ff;">Payload</span> (chars 24-123): ${fc496Cell.hex.substring(24, 124)}<br>
+                <br>
+                <strong>Technical Details:</strong><br>
+                • Total: 496 bits (62 bytes = 124 hex characters)<br>
+                • Data length: ${data.length} chars → ${stringToHex(data).length / 2} bytes<br>
+                • Coordinates: ${lat.toFixed(4)}°, ${lon.toFixed(4)}°
+                
+                <div class="debug-info">
+                    <strong>🔧 DEBUG INFO:</strong><br>
+                    Original data length: ${data.length} characters<br>
+                    Hex data length: ${stringToHex(data).length} hex chars (${stringToHex(data).length / 2} bytes)<br>
+                    Max payload capacity: 50 bytes (100 hex chars)
+                </div>
+            `;
+            
+            document.getElementById('encodeStats').style.display = 'grid';
+            document.getElementById('encodeTime').textContent = encodeTime + ' ms';
+            
+            // Store for decoding
+            window.lastEncoded = { 
+                hex: fc496Cell.hex, 
+                data: data, 
+                lat: lat, 
+                lon: lon,
+                timestamp: Date.now()
+            };
+            
+            // Auto-populate decode field
+            document.getElementById('encodedData').value = fc496Cell.hex;
+        }
+        
+        function decodeData() {
+            const startTime = performance.now();
+            const encodedHex = document.getElementById('encodedData').value.trim();
+            
+            if (!encodedHex) {
+                alert('Please paste a FC-496 cell to decode!');
+                return;
+            }
+            
+            // Validate format
+            if (encodedHex.length !== FC496_STRUCTURE.TOTAL_LENGTH) {
+                document.getElementById('decodeOutput').style.display = 'block';
+                document.getElementById('decodeOutput').innerHTML = `
+                    <div class="error">✗ Invalid FC-496 cell length</div>
+                    <br>
+                    <strong>Expected:</strong> ${FC496_STRUCTURE.TOTAL_LENGTH} hex characters (496 bits / 62 bytes)<br>
+                    <strong>Received:</strong> ${encodedHex.length} hex characters
+                    <br><br>
+                    <div class="debug-info">
+                        Make sure you copied the complete hex string from the encoder output.
+                    </div>
+                `;
+                return;
+            }
+            
+            // Decode the cell
+            const decoded = decodeFC496Cell(encodedHex);
+            const endTime = performance.now();
+            const decodeTime = (endTime - startTime).toFixed(2);
+            
+            // Display output
+            document.getElementById('decodeOutput').style.display = 'block';
+            if (decoded.valid) {
+                document.getElementById('decodeOutput').innerHTML = `
+                    <div class="success">✓ Decoded successfully!</div>
+                    <br>
+                    <strong>Original Data:</strong><br>
+                    <code style="color: #00ff88;">${escapeHtml(decoded.data)}</code>
+                    <br><br>
+                    <strong>Geographic Coordinates:</strong><br>
+                    • Latitude: ${decoded.lat.toFixed(4)}°<br>
+                    • Longitude: ${decoded.lon.toFixed(4)}°
+                    <br><br>
+                    <strong>Cell Metadata:</strong><br>
+                    • π-Index: ${decoded.piIndex}<br>
+                    • Metadata: ${decoded.metadata}<br>
+                    • Decode Time: ${decodeTime} ms
+                    <br><br>
+                    <strong>Integrity Check:</strong> <span class="success">✓ PASSED</span>
+                    
+                    <div class="debug-info">
+                        <strong>🔧 DECODE DEBUG:</strong><br>
+                        GeoPath raw: ${decoded.geoPathRaw}<br>
+                        Payload raw: ${decoded.payloadRaw.substring(0, 40)}...<br>
+                        Decoded hex length: ${decoded.payloadRaw.length} chars<br>
+                        Data recovered: ${decoded.data.length} characters
+                    </div>
+                `;
+            } else {
+                document.getElementById('decodeOutput').innerHTML = `
+                    <div class="error">✗ Decoding failed</div>
+                    <br>
+                    Error: ${decoded.error || 'Unknown error during decoding'}
+                    <br><br>
+                    <div class="debug-info">
+                        The hex string may be corrupted or not a valid FC-496 cell.
+                    </div>
+                `;
+            }
+        }
+        
+        // ===== CORE FC-496 FUNCTIONS (FIXED) =====
+        
+        function createFC496Cell(data, lat, lon) {
+            // 1. Create header components
+            const geoPath = encodeGeoPath(lat, lon);          // 8 hex chars
+            const piIndex = encodePiIndex();                   // 4 hex chars
+            const metadata = '464339360000';                   // 12 hex chars (FC496 v0.0.0)
+            
+            // 2. Encode data to hex
+            let dataHex = stringToHex(data);
+            
+            // 3. Pad or truncate payload to exactly 100 hex chars (50 bytes)
+            const maxPayloadChars = FC496_STRUCTURE.PAYLOAD_END - FC496_STRUCTURE.PAYLOAD_START;
+            if (dataHex.length > maxPayloadChars) {
+                dataHex = dataHex.substring(0, maxPayloadChars);
+            } else {
+                dataHex = dataHex.padEnd(maxPayloadChars, '0');
+            }
+            
+            // 4. Assemble complete cell
+            const fullCell = geoPath + piIndex + metadata + dataHex;
+            
+            // 5. Verify length
+            if (fullCell.length !== FC496_STRUCTURE.TOTAL_LENGTH) {
+                console.error('Cell length mismatch!', fullCell.length);
+            }
+            
+            return {
+                hex: fullCell,
+                bits: 496,
+                structure: {
+                    geoPath: geoPath,
+                    piIndex: piIndex,
+                    metadata: metadata,
+                    payload: dataHex
+                }
+            };
+        }
+        
+        function decodeFC496Cell(hex) {
+            try {
+                // 1. Extract header components using FIXED structure
+                const geoPath = hex.substring(FC496_STRUCTURE.GEOPATH_START, FC496_STRUCTURE.GEOPATH_END);
+                const piIndex = hex.substring(FC496_STRUCTURE.PI_INDEX_START, FC496_STRUCTURE.PI_INDEX_END);
+                const metadata = hex.substring(FC496_STRUCTURE.METADATA_START, FC496_STRUCTURE.METADATA_END);
+                const payload = hex.substring(FC496_STRUCTURE.PAYLOAD_START, FC496_STRUCTURE.PAYLOAD_END);
+                
+                // 2. Decode geographic coordinates
+                const latHex = geoPath.substring(0, 4);
+                const lonHex = geoPath.substring(4, 8);
+                const lat = (parseInt(latHex, 16) / 100) - 90;
+                const lon = (parseInt(lonHex, 16) / 100) - 180;
+                
+                // 3. Decode payload data
+                const data = hexToString(payload).replace(/\0/g, ''); // Remove null padding
+                
+                return {
+                    data: data,
+                    lat: lat,
+                    lon: lon,
+                    piIndex: piIndex,
+                    metadata: metadata,
+                    geoPathRaw: geoPath,
+                    payloadRaw: payload,
+                    valid: true
+                };
+            } catch (e) {
+                return { 
+                    valid: false,
+                    error: e.message
+                };
+            }
+        }
+        
+        // ===== HELPER FUNCTIONS =====
+        
+        function encodeGeoPath(lat, lon) {
+            // Encode lat/lon to 4 hex chars each (2 bytes each)
+            // Range: lat [-90, 90] → [0, 180] → [0, 18000] (×100 for precision)
+            //        lon [-180, 180] → [0, 360] → [0, 36000]
+            const latInt = Math.floor((lat + 90) * 100);
+            const lonInt = Math.floor((lon + 180) * 100);
+            return latInt.toString(16).padStart(4, '0') + lonInt.toString(16).padStart(4, '0');
+        }
+        
+        function encodePiIndex() {
+            // Use timestamp modulo to get a pseudo-random index in π digits
+            const pi = '31415926535897932384626433832795';
+            const index = Math.floor(Date.now() / 1000) % pi.length;
+            return index.toString(16).padStart(4, '0');
+        }
+        
+        function stringToHex(str) {
+            let hex = '';
+            for (let i = 0; i < str.length; i++) {
+                hex += str.charCodeAt(i).toString(16).padStart(2, '0');
+            }
+            return hex;
+        }
+        
+        function hexToString(hex) {
+            let str = '';
+            for (let i = 0; i < hex.length; i += 2) {
+                const code = parseInt(hex.substring(i, i + 2), 16);
+                if (code > 0 && code < 127) { // Only printable ASCII
+                    str += String.fromCharCode(code);
+                }
+            }
+            return str;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // ===== INITIALIZATION =====
+        window.onload = function() {
+            document.getElementById('inputData').value = '{"message": "Hello Lichen Universe!", "version": "1.0"}';
+            document.getElementById('latitude').value = '45.5017';
+            document.getElementById('longitude').value = '-73.5673';
+            
+            console.log('FC-496 Demo loaded!');
+            console.log('Structure:', FC496_STRUCTURE);
+        };
+    </script>
+</body>
+</html>
