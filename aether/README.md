@@ -6,108 +6,114 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Rust](https://img.shields.io/badge/Rust-1.75+-orange.svg?logo=rust)](https://www.rust-lang.org/)
 [![Quantum Ready](https://img.shields.io/badge/Quantum-AETHER%20V3-blueviolet)](core/uict/quantum/)
-[![Discord](https://img.shields.io/discord/1234567890.svg?label=Lichen%20Community&logo=discord&color=5865F2)](https://discord.gg/lichen-os)
 
 ---
 
-## 🌟 La Vision : Réinventer l'Informatique pour la Symbiose
-**Lichen OS** n'est pas une surcouche. C'est un **nouveau paradigme** construit *from scratch* pour l'ère de l'IA et de la physique de l'information. Nous rejetons la rétrocompatibilité forcée qui freine l'innovation.
+## 🌟 La Vision
+**Lichen OS** est un **nouveau paradigme** construit *from scratch* pour l'ère de l'IA et de la physique de l'information.
 
-### Les 5 Piliers Mathématiques :
-1.  **FC-496** : Format universel de 496 bits (Géométrie Fractale E8×E8).
-2.  **π-Time** : Standard temporel universel basé sur les constantes mathématiques.
-3.  **CEML** : Loi physique pour éliminer les hallucinations des IA ($H_{CEML}$).
-4.  **AETHER** : Architecture quantique utilisant la protection topologique de l'Angle d'Or ($\Phi$).
-5.  **Lichen Network** : Architecture P2P symbiotique.
-
----
-
-## ⚡ Benchmarks & Performance
-| Opération | FC-496 (Rust) | JSON (Legacy) | Gain |
-| :--- | :--- | :--- | :--- |
-| **Création Cellule** | 12 µs | 417 µs | **35x** |
-| **Indexation Spatiale** | 60 µs (O(1)) | 1.2 ms | **20x** |
-| **Résilience** | 60% corruption | 0% | **Indestructible** |
+### Les Piliers :
+1.  **AETHER (Quantum)** : Architecture quantique utilisant la protection topologique de l'Angle d'Or ($\Phi$).
+2.  **FC-496 (Data)** : Format universel de 496 bits (Géométrie Fractale E8×E8).
+3.  **π-Time (Tempo)** : Standard temporel universel.
+4.  **CEML (Ethics)** : Loi physique pour éliminer les hallucinations ($H_{CEML}$).
 
 ---
 
-## 🗺️ Architecture du Système
+## ⚡ Architecture du Système
 
-### Le Noyau (Core)
-* **`core/fc496`** : L'atome du système. Encodage et correction BCH(31,16).
-* **`core/hse`** : Moteur Hybride & **π-Time** (Temps universel).
-* **`core/uict/quantum`** : **Projet AETHER**. Simulation quantique prouvant la résistance de la porte $\Phi$ au bruit thermique.
+### ⚛️ AETHER (Racine `/aether`)
+Le module quantique autonome.
+* **Simulation** : Prouve la résistance de la porte $\Phi$ au bruit thermique.
+* **Visualisation** : Composants React pour visualiser la décohérence.
 
-### Le Hardware (Concept)
-* **Snowflake CPU** : Architecture fractale à 496 pins par branche pour transfert natif.
+### 🦀 CORE (Racine `/core`)
+Le noyau Rust haute performance.
+* **`fc496`** : Encodage et correction BCH(31,16).
+* **`hse`** : Moteur Hybride & π-Time.
 
 ---
 
-## 🚀 Installation & Démarrage
+## 🚀 Installation & Test AETHER
 
 ```bash
 git clone [https://github.com/quantum-lichen/Lichen-Universe-Unified.git](https://github.com/quantum-lichen/Lichen-Universe-Unified.git)
 cd Lichen-Universe-Unified
 
 # Lancer la simulation quantique AETHER
-cd core/uict/quantum
+cd aether/simulation
 pip install -r requirements.txt
 python aether_v3_sim.py
-
 "Le noyau respire, la spirale s'ouvre." — BryanΩ
-```
+
 
 ---
 
-#### B. La Configuration Rust : `Cargo.toml`
-*Emplacement : Racine du projet*
+#### B. Le Moteur Quantique : `aether_v3_sim.py`
+*Emplacement : `aether/simulation/aether_v3_sim.py`*
 
-```toml
-[workspace]
-members = [
-    "core/fc496",
-    "core/hse",
-    "core/uict",
-    "core/ceml",
-    "core/lichen_net",
-    "apps/lichen_cli",
-]
-resolver = "2"
+```python
+# 🔬 AETHER V3 : Simulation de Résilience Quantique Topologique
+# Emplacement : aether/simulation/
+# Auteur : Bryan Ouellette
 
-[workspace.dependencies]
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-rayon = "1.8"       # Parallélisme massif
-tokio = { version = "1.0", features = ["full"] }
-ndarray = "0.15"    # Calculs tensoriels
-sha2 = "0.10"
-criterion = "0.5"   # Benchmarks
-```
+import numpy as np
+from qiskit import QuantumCircuit, transpile
+from qiskit_aer import AerSimulator
+from qiskit_aer.noise import NoiseModel, thermal_relaxation_error, depolarizing_error
+from qiskit.quantum_info import state_fidelity, Statevector
+from scipy.stats import ttest_ind
+import json
 
-"Le noyau respire, la spirale s'ouvre." — BryanΩ
+# --- CONSTANTES ---
+PHI = (1 + np.sqrt(5)) / 2
+GOLDEN_ANGLE = 2 * np.pi * (1 - 1/PHI)
+STANDARD_ANGLES = {'Standard π/2': np.pi/2, 'Aether Φ': GOLDEN_ANGLE}
+NOISE_CONFIG = {'T1': 50e-6, 'T2': 70e-6, 'gate_time': 0.1e-6, 'depol': 0.001}
 
----
+def create_noise_model():
+    nm = NoiseModel()
+    error_therm = thermal_relaxation_error(NOISE_CONFIG['T1'], NOISE_CONFIG['T2'], NOISE_CONFIG['gate_time'])
+    error_depol = depolarizing_error(NOISE_CONFIG['depol'], 1)
+    nm.add_all_qubit_quantum_error(error_therm.compose(error_depol), ['rz', 'u3'])
+    return nm
 
-#### B. La Configuration Rust : `Cargo.toml`
-*Emplacement : Racine du projet*
+def create_circuit(angle, layers):
+    qc = QuantumCircuit(1)
+    qc.h(0)
+    for _ in range(layers):
+        qc.rz(angle, 0)
+        qc.barrier()
+    qc.save_density_matrix()
+    return qc
 
-```toml
-[workspace]
-members = [
-    "core/fc496",
-    "core/hse",
-    "core/uict",
-    "core/ceml",
-    "core/lichen_net",
-    "apps/lichen_cli",
-]
-resolver = "2"
+def run_simulation(max_layers=50, trials=20):
+    backend = AerSimulator(noise_model=create_noise_model())
+    results = {name: {'fidelity': []} for name in STANDARD_ANGLES.keys()}
+    
+    print(f"🚀 Simulation AETHER V3 [Layers: {max_layers}]...")
+    
+    for name, angle in STANDARD_ANGLES.items():
+        ideal = Statevector.from_instruction(create_circuit(angle, max_layers))
+        for _ in range(trials):
+            qc = create_circuit(angle, max_layers)
+            job = backend.run(transpile(qc, backend), shots=1)
+            noisy = job.result().data()['density_matrix']
+            results[name]['fidelity'].append(state_fidelity(ideal, noisy))
+            
+    return results
 
-[workspace.dependencies]
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-rayon = "1.8"       # Parallélisme massif
-tokio = { version = "1.0", features = ["full"] }
-ndarray = "0.15"    # Calculs tensoriels
-sha2 = "0.10"
-criterion = "0.5"   # Benchmarks
+if __name__ == "__main__":
+    data = run_simulation()
+    phi_res = data['Aether Φ']['fidelity']
+    std_res = data['Standard π/2']['fidelity']
+    t_stat, p_val = ttest_ind(phi_res, std_res)
+    
+    print(f"\n📊 Moyenne Fidélité Φ   : {np.mean(phi_res):.4f}")
+    print(f"📊 Moyenne Fidélité π/2 : {np.mean(std_res):.4f}")
+    
+    if np.mean(phi_res) > np.mean(std_res):
+        print("\n✅ SUCCÈS : L'Architecture Aether est plus résiliente.")
+        
+    with open('aether_results.json', 'w') as f:
+        json.dump(data, f, indent=2)
