@@ -15,7 +15,7 @@ ALL my project in ONE place
 [![Quantum Ready](https://img.shields.io/badge/Quantum-AETHER%20V3-blueviolet)](core/uict/quantum/)
 [![Discord](https://img.shields.io/discord/1234567890.svg?label=Lichen%20Community&logo=discord&color=5865F2)](https://discord.gg/lichen-os)
 [![WASM](https://img.shields.io/badge/WASM-Ready-blueviolet.svg?logo=webassembly)](https://webassembly.org/)
-[![Build Status](https://github.com/quantum-lichen/lichen-os/actions/workflows/ci.yml/badge.svg)](https://github.com/quantum-lichen/lichen-os/actions)
+
 
 
 **Topics:**  
