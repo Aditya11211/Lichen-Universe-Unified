@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEML | Cognitive Entropy Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-fractal" id="fractal-bg"></div>
+    
+    <div class="container">
+        <header>
+            <h1>CEML <span class="phi">Φ</span></h1>
+            <p class="subtitle">Cognitive Entropy Minimization Law</p>
+        </header>
+
+        <main class="grid-golden">
+            <section class="control-panel glass">
+                <h2>Injecter une Pensée</h2>
+                <div class="input-group">
+                    <label>Cohérence (C)</label>
+                    <input type="range" id="coherence" min="0" max="1" step="0.01" value="0.5">
+                    <span id="val-c">0.50</span>
+                </div>
+                <div class="input-group">
+                    <label>Entropie (H)</label>
+                    <input type="range" id="entropy" min="0.01" max="1" step="0.01" value="0.5">
+                    <span id="val-h">0.50</span>
+                </div>
+                <div class="equation">
+                    J(s) = <span class="math">C</span> / <span class="math">H</span>
+                </div>
+            </section>
+
+            <section class="result-panel glass">
+                <div class="score-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" class="bg-ring"></circle>
+                        <circle cx="50" cy="50" r="45" class="progress-ring" id="score-ring"></circle>
+                    </svg>
+                    <div class="score-value" id="final-score">0.00</div>
+                    <div class="threshold">Seuil Φ (1.618)</div>
+                </div>
+                <div class="decision" id="decision-text">EN ATTENTE</div>
+            </section>
+        </main>
+
+        <section class="fractal-explanation glass">
+            <h3>Dynamique de Sélection</h3>
+            <div class="visualizer" id="particle-system"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
