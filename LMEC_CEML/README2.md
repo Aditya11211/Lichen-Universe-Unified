@@ -2,13 +2,53 @@
 [![Language](https://img.shields.io/badge/lang-EN%20%7C%20FR-purple)](docs/ceml/CEML_theory_en.md)
 [![Type](https://img.shields.io/badge/type-theory%20%2B%20PoC-orange)](docs/ceml/CEML_theory_en.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+![License](https://img.shields.io/badge/license-MIT-purple)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Branches](https://img.shields.io/badge/branches-20%2B-blue)](https://github.com/quantum-lichen/Lichen-Universe)
 [![Projects](https://img.shields.io/badge/projects-19-green)](https://github.com/quantum-lichen/Lichen-Universe/projects)
 [![Build Status](https://github.com/quantum-lichen/Lichen-Universe/actions/workflows/rust.yml/badge.svg)](https://github.com/quantum-lichen/Lichen-Universe/actions)
-[![Rust](https://img.shields.io/badge/rust-1.75%2B-orange.svg)](https://www.rust-lang.org/)
+[![Rust](https://img.shields.io/badge/Rust-1.75%2B-orange.svg?logo=rust)](https://www.rust-lang.org/)
 [![Quantum](https://img.shields.io/badge/quantum-ready-blueviolet.svg)](core/uict/quantum/)
+[![Quantum Ready](https://img.shields.io/badge/Quantum-AETHER%20V3-blueviolet)](core/uict/quantum/)
 [![arXiv](https://img.shields.io/badge/arXiv-2512.12345-b31b1b.svg)](https://arxiv.org/abs/2512.12345)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
+[![WASM](https://img.shields.io/badge/WASM-Ready-blueviolet.svg?logo=webassembly)](https://webassembly.org/)
+
+
+
+
+
+
+
+
+**Topics:**  
+[rust](https://github.com/topics/rust) ·
+[ai](https://github.com/topics/ai) ·
+[os](https://github.com/topics/os) ·
+[webassembly](https://github.com/topics/webassembly) ·
+[quantum-computing](https://github.com/topics/quantum-computing) ·
+[golden-ratio](https://github.com/topics/golden-ratio) ·
+[aether](https://github.com/topics/aether) ·
+[data-format](https://github.com/topics/data-format) ·
+[system-design](https://github.com/topics/system-design) ·
+[cognitive-architecture](https://github.com/topics/cognitive-architecture) ·
+[cognitive-systems](https://github.com/topics/cognitive-systems) ·
+[qiskit](https://github.com/topics/qiskit) ·
+[biomimicry](https://github.com/topics/biomimicry) ·
+[quantum-simulation](https://github.com/topics/quantum-simulation) ·
+[ai-alignment](https://github.com/topics/ai-alignment) ·
+[fractal-architecture](https://github.com/topics/fractal-architecture) ·
+[quantum-computing-research](https://github.com/topics/quantum-computing-research) ·
+[universal-time](https://github.com/topics/universal-time) ·
+[fc496](https://github.com/topics/fc496) ·
+[lichen-os](https://github.com/topics/lichen-os)
+
+
+
+
+
+
 
 # 🧠 Cognitive Entropy Minimization Law (CEML)
 ## Loi de Minimisation de l’Entropie Cognitive (LMC)
