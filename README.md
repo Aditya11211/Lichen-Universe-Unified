@@ -1,6 +1,9 @@
 # Lichen-Universe
 ALL my project in ONE place
 
+![Branches](https://img.shields.io/badge/branches-20+-blue)
+![Projects](https://img.shields.io/badge/projects-19-green)
+![License](https://img.shields.io/badge/license-MIT-purple)
 
 ## 🔗 Project Implementations
 
