@@ -1,0 +1,4 @@
+FC496 Cell:
+- Header: [Geo-Path: 0xA1B2, π-Time: π1234.567.890.3, ECC: BCH(31,16)]
+- Payload: [Data: "John Doe", "healthy" (encodé en 306 bits)]
+- CEML Score: 0.98
