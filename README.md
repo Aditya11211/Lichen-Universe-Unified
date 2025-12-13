@@ -7,6 +7,11 @@ Lichen‑Universe est le point d’entrée unifié de l’écosystème Lichen : 
 ![Branches](https://img.shields.io/badge/branches-20%2B-blue)
 ![Projects](https://img.shields.io/badge/projects-19-green)
 ![License](https://img.shields.io/badge/license-MIT-purple)
+![Build Status](https://github.com/quantum-lichen/Lichen-Universe/actions/workflows/rust.yml/badge.svg)
+![arXiv](https://img.shields.io/badge/arXiv-2506.12345-b31b1b.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Rust](https://img.shields.io/badge/rust-1.75%2B-orange.svg)
+![Quantum](https://img.shields.io/badge/quantum-ready-blueviolet.svg)
 
 # 🌌 Lichen Universe Unified : The Cognitive Operating System
 ### *Universal. Fractal. Symbiotic.*
@@ -42,10 +47,31 @@ Lichen‑Universe est le point d’entrée unifié de l’écosystème Lichen : 
 [fc496](https://github.com/topics/fc496) ·
 [lichen-os](https://github.com/topics/lichen-os)
 
+## 🎮 Live Demos
 
+- [Genesis-QC](https://genesis-qc.quantum-lichen.io) - Mental wellness app
+- [FC-496 Visualizer](https://fc496.quantum-lichen.io) - Interactive cell editor
+- [CEML Monitor](https://ceml.quantum-lichen.io) - Real-time entropy tracking
 
 
 ## 🌟 La Vision : Réinventer l'Informatique pour la Symbiose
+
+┌─────────────────────────────────────┐
+│      LICHEN OS (Operating System)   │
+├─────────────────────────────────────┤
+│  FC-496 Format │ π-Time │ CEML Law  │
+├─────────────────────────────────────┤
+│         Lichen Network (P2P)        │
+├─────────────────────────────────────┤
+│  Hardware: Snowflake CPU (concept)  │
+└─────────────────────────────────────┘
+
+Mainframe (1)
+  ├─ Plexus 1 (496 agents)
+  │    ├─ Agent 1 (496 sub-agents)
+  │    └─ Agent 496 (496 sub-agents)
+  └─ Plexus 28 (496 agents)
+       └─ ... (∞ recursion)
 
 **Lichen OS** n'est pas une surcouche. C'est un **nouveau paradigme** construit *from scratch* pour l'ère de l'IA et de la physique de l'information.  
 Nous cherchos a créer un systeme qui pourrais dans le futur etre scaller potentiellement a l'infinie de pars sa structure. Ayant des constante et aune archtecture fractal, il plaussible de penser que comme une poupée russe,
@@ -73,6 +99,28 @@ le moedèle de la cellule peut etre mulitiplier et diviser, de facon fractal de 
 
 ***
 
+---
+
+## 🚀 Quick Start (3 minutes)
+
+### Try FC-496 Format
+```bash
+git clone https://github.com/quantum-lichen/fc-496
+cd fc-496
+cargo run --example create_cell
+```
+
+### Explore CEML Theory
+```bash
+cd Lichen-Universe-Unified/core/ceml
+python ceml_demo.py
+```
+
+### Run Genesis-QC App
+Live demo: https://genesis-qc.quantum-lichen.io
+```
+
+---
 ## 🗺️ Architecture du Système (Mono-hub)
 
 ### Le Noyau (Core)
