@@ -1,3 +1,13 @@
+## 📖 Glossaire
+| **Terme**       | **Définition**                                                                                     | **Exemple**                                                                                     |
+|-----------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **FC-496**      | Format de données universel (496 bits) basé sur des constantes mathématiques (E8×E8, π, Φ).      | Une cellule FC-496 encode un dossier médical avec géométrie fractale.                          |
+| **CEML**        | Cognitive Entropy Minimization Law : filtre les hallucinations des IA via C(Ψ)/H(Ψ).              | Un score CEML de 0.95 signifie une réponse très cohérente.                                      |
+| **π-Time**       | Système temporel universel basé sur les digits de π.                                             | `π1234.567.890.3` représente un instant précis dans le temps.                                   |
+| **Geo-Path**    | Adressage spatial fractal (remplace lat/lon).                                                    | `0xA1B2` pointe vers une région spécifique dans un espace fractal.                                |
+| **H-Scale**     | Métrique d’harmonie (Cohérence + Énergie + Résonance + Durabilité).                              | Un score H-Scale de 0.9 signifie une décision éthique et durable.                               |
+
+
 ## 🔑 FC-496 : Protocole d'Interopérabilité Universelle
 
 Le protocole FC-496 (Cellule Fractale-496) propose de remplacer les unités de calcul arbitraires (bit/byte) par une unité fondamentale universelle et **cosmologiquement compatible**, ancrée dans des constantes mathématiques immuables.
