@@ -8,21 +8,9 @@ Lichen‑Universe est le point d’entrée unifié de l’écosystème Lichen : 
 ### *Universal. Fractal. Symbiotic.*
 
 ![Branches](https://img.shields.io/badge/branches-20%2B-blue)
-![Projects](https://img.shields.io/badge/projects-19-green)
 ![License](https://img.shields.io/badge/license-MIT-purple)
-![Build Status](https://github.com/quantum-lichen/Lichen-Universe/actions/workflows/rust.yml/badge.svg)
-![arXiv](https://img.shields.io/badge/arXiv-2506.12345-b31b1b.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Rust](https://img.shields.io/badge/rust-1.75%2B-orange.svg)
-![Quantum](https://img.shields.io/badge/quantum-ready-blueviolet.svg)
-
-
-
-[![arXiv](https://img.shields.io/badge/arXiv-2512.12345-b31b1b.svg)](https://arxiv.org/abs/2512.12345)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Rust](https://img.shields.io/badge/Rust-1.75%2B-orange.svg?logo=rust)](https://www.rust-lang.org/)
-[![Quantum Ready](https://img.shields.io/badge/Quantum-AETHER%20V3-blueviolet)](core/uict/quantum/)
 [![WASM](https://img.shields.io/badge/WASM-Ready-blueviolet.svg?logo=webassembly)](https://webassembly.org/)
 
 
