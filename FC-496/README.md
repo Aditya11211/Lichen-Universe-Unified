@@ -1,3 +1,11 @@
+FC‑496 – Cellule fractale de 496 bits (spec v0.1, draft)
+
+FC‑496 est une unité de donnée de 496 bits basée sur 3 constantes (496, ϕ, π).
+Elle sert d’atome universel pour encoder du code, des données, du temps (π‑time) et de la position (Geo‑Seed) dans une seule cellule fractale.
+L’objectif: rendre tout système interopérable et auto‑corrigeant à partir de cette géométrie unique.
+
+Visuel ici : https://gemini.google.com/share/11e6d95beb21
+
 ## 📖 Glossaire
 | **Terme**       | **Définition**                                                                                     | **Exemple**                                                                                     |
 |-----------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
