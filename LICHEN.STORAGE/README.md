@@ -10,7 +10,7 @@
 We nuked **60% of our data center** (6 out of 10 nodes). 
 **Result:** 0 bytes lost. Recovery time: 1.2s.
 
-![Lichen Demo](https://picsum.photos/800/400?grayscale) *(Replace with actual GIF of demo)*
+![Lichen Demo](https://gemini.google.com/share/2747ffbb1f75) 
 
 ## ⚡ Why it goes hard
 
