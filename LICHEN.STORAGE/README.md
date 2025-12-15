@@ -33,7 +33,7 @@ text
 | **Corruption** | Scrub | **Invariant 496** |
 
 ## 🚀 **LIVE DEMO**
-[![LIVE](https://img.shields.io/badge/LIVE-DEMO-00D4AA?style=for-the-badge&logo=streamlit&logoColor=white)](https://lichen-universe-unified-4qfplvaa7g9pc9xsynhqtv.streamlit.app/)
+[![LIVE](https://img.shields.io/badge/LIVE-DEMO-00D4AA?style=for-the-badge&logo=streamlit&logoColor=white)](https://lichenstorageapp-fsf6drmgbngcqgdberwygn.streamlit.app/)
 
 **"Ton data > probabilité galaxie disparaît spontanément"**
 
