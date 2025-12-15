@@ -3,6 +3,8 @@
 FC-496 (Fractal Cell‑496) est une unité de donnée de **496 bits** basée sur trois constantes mathématiques : **496**, **ϕ** (Nombre d’Or) et **π**.  
 Chaque cellule encode un **événement unique** combinant : contenu, temps (π‑Time) et position (Geo‑Seed) dans une géométrie fractale.
 
+Visuel ici : https://gemini.google.com/share/11e6d95beb21
+
 L’objectif : proposer un **format d’information universel**, auto‑corrigeant et interopérable entre systèmes, langages et même disciplines (informatique, physique, urbanisme, biologie, etc.).
 
 ---
