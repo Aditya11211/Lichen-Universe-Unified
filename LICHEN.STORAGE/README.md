@@ -1,35 +1,38 @@
-# 🟢 **LICHEN STORAGE** : Stockage **IMMORTEL** (60% Apocalypse OK) ⭐⭐⭐
+# 🟢 **LICHEN STORAGE** : Stockage IMMORTEL
 
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF1493?style=for-the-badge&logo=streamlit)](https://streamlit.io)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)](https://docker.com)
+**60% Apocalypse OK** | **φ-optimal 1.618x** | **Math-proof** | **Quantum-ready**
 
-RAID=2 pannes | LICHEN=3+ (φ-optimal 1.618x)
-Math-proof • Quantum-ready
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 
-🐳 1-CLIC:
-pip install streamlit numpy
-streamlit run app.py
+## 🐳 **1-CLIC LAUNCH** (30s)
 
-## 🎬 **TEST L'APOCALYPSE** (60% nœuds NUKED → 100% data OK)
-
-| RAID-6 | **LICHEN CRAID-496** |
-|--------|---------------------|
-| **2 pannes max** | **3+ pannes (60% OK)** |
-| **2x overhead** | **1.618x φ-optimal** |
-| **Arrêt obligatoire** | **100% rolling upgrade** |
-| **Bit rot scrub** | **Invariant 496 auto** |
-
-## 🐳 **1-CLIC LAUNCH**
+**Local :**
 cd LICHEN.STORAGE
 pip install -r requirements.txt
 streamlit run app.py
 
-Ou Docker: docker run -p 8501:8501 quantum-lichen/lichen-demo
+text
+→ http://localhost:8501
+
+**Docker :**
+docker build -t lichen . && docker run -p 8501:8501 lichen
+
 text
 
-## 🚀 **LIVE DEMO** (en cours)
-**[Démo interactive](https://quantum-lichen-lichen-storage.streamlit.app)**  
-**GIF Apocalypse** : 60% nœuds tués → Résurrection 2s ✅
+## 🎬 **TEST L'APOCALYPSE**
+**60% nœuds NUKED → 100% data OK** 🟢
 
-> *"Ton data > probabilité galaxie disparaît spontanément"*  
-> **Star si tu veux l'immortalité !** 🟢
+| **Critère** | **RAID-6** | **LICHEN CRAID-496** |
+|-------------|------------|---------------------|
+| **Pannes** | 2 max | **3+ (60% OK)** |
+| **Overhead** | 2x | **φ=1.618x** |
+| **Downtime** | Arrêt | **0s Rolling** |
+| **Corruption** | Scrub | **Invariant 496** |
+
+## 🚀 **LIVE DEMO**
+[![LIVE](https://img.shields.io/badge/LIVE-DEMO-00D4AA?style=for-the-badge&logo=streamlit&logoColor=white)](https://quantum-lichen-lichen-storage.streamlit.app/)
+
+**"Ton data > probabilité galaxie disparaît spontanément"**
+
+⭐ **Star si tu veux l'immortalité !** 🟢
