@@ -191,6 +191,8 @@ text
 **FC‑496 (Fractal Cell‑496)** is a 496‑bit data unit built on three constants: **496**, **ϕ** and **π**.  
 Each cell encodes a unique **event**: `{content + π‑Time + Geo‑Seed}`, in a fractal geometry.
 
+Visual here : https://gemini.google.com/share/11e6d95beb21
+
 Goal: use these constants as an **“ultimate key”** to encode any software/data structure into a single, self‑verifying, interoperable format.
 
 ### Core Ideas
