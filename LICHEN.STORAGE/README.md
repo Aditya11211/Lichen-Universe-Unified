@@ -44,9 +44,4 @@ text
 
 ⭐ **Star si immortel !**  
 🍺 **Built with passion @ Lichen Labs**
-🎯 Actions 2min
-text
-1. GitHub → Lichen.Storage_streamlit → README.md → Edit
-2. EFFACE TOUT → COLLE ÇA
-3. Commit: "📖 README pro + demo"
-4. PUSH → Twitter boosté !
+
