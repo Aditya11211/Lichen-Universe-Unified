@@ -128,7 +128,7 @@ Nous ne construisons pas juste un OS, nous cultivons un écosystème.
 Nous cherchons des **bâtisseurs**, pas des consommateurs.
 Si vous connaissez le Rust, la théorie des graphes, ou si vous êtes juste assez fou pour vouloir réécrire l'informatique :
 
-1.  **Lisez le [Manifeste](https://www.google.com/search?q=./MASTERPLAN.txt)**.
+1.  **Lisez le [Manifeste](https://github.com/quantum-lichen/Lichen-Universe-Unified/blob/main/Lichen-OS/manifeste_Fr.md)**.
 2.  Clonez le repo : `git clone https://github.com/quantum-lichen/Lichen-Universe-Unified.git`
 3.  Lancez les tests : `cargo test --workspace --release`
 
