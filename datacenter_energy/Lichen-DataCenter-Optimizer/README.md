@@ -4,7 +4,7 @@
 ### Aligner l'Infrastructure Numérique sur la Cognition Humaine
 
 ![Status](https://img.shields.io/badge/Status-Prototype_Validated-success?style=for-the-badge)
-![Energy Saved](https://img.shields.io/badge/Energy_Saved-67.5%25-brightgreen?style=for-the-badge&logo=leaf)
+![Energy Saved](https://img.shields.io/badge/Energy_Saved-60%25-brightgreen?style=for-the-badge&logo=leaf)
 ![Entropy](https://img.shields.io/badge/Entropy-Minimized-blueviolet?style=for-the-badge&logo=atom)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)
 ![License](https://img.shields.io/badge/License-AGPL_v3-red?style=for-the-badge)
