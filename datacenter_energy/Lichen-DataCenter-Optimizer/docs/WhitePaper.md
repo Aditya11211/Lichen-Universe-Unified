@@ -318,7 +318,7 @@ Ajustement des motifs LES et des paramètres.
 
 Amélioration progressive de l’alignement et de la réduction d’énergie.
 
-Tu peux représenter cela sous forme de pipeline :
+On peut représenter cela sous forme de pipeline :
 
 Client → LES Engine → CEML Engine → Scheduler Cognitif → Cluster DC → Feedback → (LES/CEML)```
 
