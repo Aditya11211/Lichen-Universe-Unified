@@ -264,34 +264,65 @@ def calculer_entropie_les(texte):
 
 ### 12.2 Schéma d’Architecture (Flux de Données)
 
- 
-```mermaid
+ Flux conceptuel Lichen‑OS :
 
-graph TD
-    User[Client / API] -->|Requête Brute| LES[🌀 LES Engine]
-    LES -->|1. Calcul Entropie H(R)| LES
-    LES -->|2. Compression| Sig[Signature Sémantique]
-    
-    Sig --> CEML[🧠 CEML Engine]
-    CEML -->|Recherche Mémoire| Mem[(Mémoire Signatures)]
-    
-    Mem -- "Signature Connue (Hit)" --> Cache[⚡ Rappel Résultat]
-    Mem -- "Nouvelle Signature (Miss)" --> Sched[📅 Scheduler Cognitif]
-    
-    Sched -->|Priorité selon Entropie| DC[🏢 Data Center Cluster]
-    DC -->|Résultat Calcul| Feedback[Boucle Feedback]
-    
-    Feedback -->|Mise à jour| Mem
-    Feedback --> User
-    Cache --> User
-    
-    style LES fill:#f9f,stroke:#333,stroke-width:2px
-    style CEML fill:#bbf,stroke:#333,stroke-width:2px
-    style DC fill:#bfb,stroke:#333,stroke-width:2px
-```
+Entrée requête
+L’utilisateur ou un service envoie une requête (ex. appel IA, job data, requête analytique).
+
+Module LES
+
+Analyse la requête.
+
+Calcule l’entropie 
+H
+(
+R
+)
+H(R).
+
+Produit une représentation comprimée (signature LES).
+
+Module CEML
+
+Reçoit la signature LES.
+
+Génère une signature CEML (orientée redondance).
+
+Consulte la mémoire des signatures :
+
+Si signature connue → rappel / chemin court.
+
+Si signature nouvelle → marquage pour calcul complet.
+
+Scheduler cognitif
+
+Utilise l’entropie et le statut CEML pour décider :
+
+Priorité.
+
+Ressource cible (serveur, cluster).
+
+Stratégie d’exécution (complète ou allégée).
+
+Exécution sur le Data Center
+
+Les workloads passent sur l’infrastructure existante (CPU, GPU, etc.).
+
+Les métriques (énergie, temps, entropie) remontent vers LES/CEML.
+
+Boucle de feedback
+
+Mise à jour de la mémoire CEML.
+
+Ajustement des motifs LES et des paramètres.
+
+Amélioration progressive de l’alignement et de la réduction d’énergie.
+
+Tu peux représenter cela sous forme de pipeline :
+
+Client → LES Engine → CEML Engine → Scheduler Cognitif → Cluster DC → Feedback → (LES/CEML)```
 
 
-*Figure 1 : Pipeline de traitement cognitif Lichen-OS.*
 
 -----
 
