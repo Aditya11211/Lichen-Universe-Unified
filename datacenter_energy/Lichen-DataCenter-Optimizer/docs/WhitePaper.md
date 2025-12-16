@@ -264,7 +264,9 @@ def calculer_entropie_les(texte):
 
 ### 12.2 Schéma d’Architecture (Flux de Données)
 
+ 
 ```mermaid
+
 graph TD
     User[Client / API] -->|Requête Brute| LES[🌀 LES Engine]
     LES -->|1. Calcul Entropie H(R)| LES
@@ -287,6 +289,7 @@ graph TD
     style CEML fill:#bbf,stroke:#333,stroke-width:2px
     style DC fill:#bfb,stroke:#333,stroke-width:2px
 ```
+
 
 *Figure 1 : Pipeline de traitement cognitif Lichen-OS.*
 
