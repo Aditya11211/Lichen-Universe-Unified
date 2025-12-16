@@ -34,7 +34,7 @@ Deux briques principales composent ce modèle :
 * **Low‑Entropy Spiral (LES)** : structure et compresse l’information selon son importance cognitive.
 * **Cognitive Entropy Minimization Loop (CEML)** : élimine les redondances et évite les recalculs inutiles.
 
-Un prototype opérationnel, déployé sous forme de simulateur et de tableau de bord interactif, montre une **réduction d’énergie de l’ordre de 50 à 75%** sur des scénarios représentatifs de charge, avec un cas typique mesuré à **≈ 67,5% de réduction de consommation énergétique** pour des workloads de type IA / data processing.
+Un prototype opérationnel, déployé sous forme de simulateur et de tableau de bord interactif, montre une **réduction d’énergie de l’ordre de 50 à 75%** sur des scénarios représentatifs de charge, avec un cas typique mesuré à **≈ 60% de réduction de consommation énergétique** pour des workloads de type IA / data processing.
 
 ---
 
