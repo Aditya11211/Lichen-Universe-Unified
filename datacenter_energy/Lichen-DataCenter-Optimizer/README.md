@@ -20,7 +20,7 @@
 ## 🌍 Le Problème : L'Impasse Énergétique
 Les data centers consomment aujourd'hui **1 à 1,5 % de l'électricité mondiale**. Avec l'explosion de l'IA, ce chiffre grimpe en flèche. L'approche actuelle (optimiser le refroidissement, le hardware) atteint ses limites physiques.
 
-> **Notre approche est différente :** Nous n'optimisons pas la machine, nous optimisons la **pensée** de la machine.
+> **Notre approche est différente :** Nous n'optimisons pas la machine, nous optimisons la "**pensée**" de la machine.
 
 ---
 
