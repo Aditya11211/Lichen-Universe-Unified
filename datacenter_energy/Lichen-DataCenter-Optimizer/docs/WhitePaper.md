@@ -173,13 +173,13 @@ $$\text{Savings} = 1 - \frac{E_{\text{LES/CEML}}}{E_{\text{Standard}}}$$
 
 ## 8. Résultats expérimentaux
 
-### 8.1 Cas typique : économie ≈ 67,5%
+### 8.1 Cas typique : économie ≈ 60%
 Sur un ensemble de scénarios représentatifs (requêtes textuelles complexes, motifs redondants, charges de type IA), le simulateur montre :
 
 | Métrique | Valeur Standard | Valeur Lichen-OS |
 | :--- | :--- | :--- |
 | **Énergie Totale** | 10 000 unités | ~3 245 unités |
-| **Gain Énergétique** | 0% | **67,5%** |
+| **Gain Énergétique** | 0% | **60%** |
 | **Entropie Finale** | 1.0 (Haute) | 0.12 (Alignée) |
 
 ### 8.2 Interprétation
