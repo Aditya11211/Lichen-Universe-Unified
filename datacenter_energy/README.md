@@ -90,6 +90,15 @@ Nous avons transposé des mécanismes cognitifs humains en algorithmes d'infrast
 * Pas un data center qui calcule → **Un data center qui comprend.**
 * Pas une optimisation → **Une symbiose.**
 
+## 📜 Licence
+Ce projet est sous **licence AGPL-3.0** :
+- **Utilisation libre** (recherche, éducation, usage personnel).
+- **Modifications** : Doivent être **open-source** si déployées (ex : services cloud).
+- **Contributions** : Les améliorations doivent être **partagées avec la communauté**.
+
+Voir [LICENSE](LICENSE) pour plus de détails.
+
+
 ---
 <div align="center">
 
