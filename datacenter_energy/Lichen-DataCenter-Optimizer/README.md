@@ -11,7 +11,7 @@
 
 **Réduisez la consommation énergétique de vos clusters de 50% à 75% grâce à l'algorithmique cognitive.**
 
-[**🚀 Voir la Démo**](https://lesdatacenteroptimizer-aetspk7ft9ec4wsipsrngc.streamlit.app/) | [**📄 Lire le Whitepaper**](docs/whitepapers/)
+[**🚀 Voir la Démo**](https://lesdatacenteroptimizer-aetspk7ft9ec4wsipsrngc.streamlit.app/) | [**📄 Lire le Whitepaper**](https://github.com/quantum-lichen/Lichen-Universe-Unified/blob/main/datacenter_energy/Lichen-DataCenter-Optimizer/docs/whitepapper.md)
 
 </div>
 
