@@ -1,0 +1,107 @@
+# PROPRIETARY LICENSE
+
+## Copyright Notice
+
+**Copyright © 2025 Bryan Ouellette (quantum-lichen/Lichen Universe)**
+
+**All Rights Reserved.**
+
+---
+
+## License Terms
+
+This software, documentation, and all associated materials (collectively, the "Software") are the exclusive property of Bryan Ouellette ("Owner").
+
+### 1. Ownership
+
+The Owner retains **full and exclusive ownership** of all intellectual property rights, including but not limited to:
+- Source code and object code
+- Algorithms and methodologies
+- Documentation and specifications
+- Design patterns and architectures
+- The FC-496 format specification
+- The φ-spiral addressing algorithm
+- The H-Scale validation system
+- All derivative works
+
+### 2. Prohibited Actions
+
+**WITHOUT EXPRESS WRITTEN PERMISSION** from the Owner, you may NOT:
+- Copy, modify, or distribute the Software
+- Create derivative works based on the Software
+- Use the Software for commercial purposes
+- Reverse engineer, decompile, or disassemble the Software
+- Remove or alter any copyright notices
+- Grant sublicenses or transfer rights to third parties
+- Use the Software in production environments
+- Implement the algorithms or specifications in other software
+
+### 3. Permitted Actions
+
+You MAY:
+- **View** the Software for educational and research purposes
+- **Study** the documentation and specifications
+- **Reference** this work in academic papers (with proper citation)
+- **Discuss** the concepts and methodologies in public forums
+
+### 4. Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+### 5. Licensing Inquiries
+
+For commercial licensing, partnership opportunities, or special permissions, please contact:
+
+**Email:** lmc.theory@gmail.com  
+**Organization:** Lichen Universe  
+**Author:** Bryan Ouellette
+
+### 6. Future License Changes
+
+The Owner reserves the right to:
+- Change this license at any time without notice
+- Release the Software under different license terms in the future (e.g., AGPL v3, commercial license)
+- Grant individual licenses on a case-by-case basis
+
+### 7. Jurisdiction
+
+This license shall be governed by and construed in accordance with the laws of Quebec, Canada, without regard to its conflict of law provisions.
+
+### 8. Severability
+
+If any provision of this license is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that this license shall otherwise remain in full force and effect.
+
+---
+
+## Patent Notice
+
+This Software may be covered by pending patent applications. All patent rights are reserved by the Owner.
+
+---
+
+## Trademark Notice
+
+"UHFS", "Universal Holographic File System", "FC-496", "Lichen Universe", and related logos are trademarks of Bryan Ouellette. Unauthorized use is prohibited.
+
+---
+
+## Citation
+
+If you reference this work in academic publications, please cite:
+```
+Ouellette, B. (2025). UHFS V2.0: Universal Holographic File System - 
+A Geometric Approach to Zero-Copy Storage. Lichen Universe. 
+https://github.com/quantum-lichen/uhfs
+```
+
+---
+
+**Last Updated:** December 16, 2025  
+**Version:** 1.0  
+**Contact:** lmc.theory@gmail.com
+
+---
+
+**BY VIEWING, ACCESSING, OR USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS LICENSE, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.**
