@@ -72,7 +72,7 @@ Lichen est conçu comme un **stack vertical unifié** où chaque couche utilise 
 │  (Rust-based, φ-optimized task allocation)  │
 ├─────────────────────────────────────────────┤
 │  Filesystem: UHFS (Universal Holographic)   │  ← φ-spiral LSH, zero-copy
-│  (Zones φ-distributed, holographic retrieval)│
+│ (Zones φ-distributed, holographic retrieval)│
 ├─────────────────────────────────────────────┤
 │  Data Format: FC-496 / ACΦ-496              │  ← 496-bit atoms, BCH checksums
 │  (Fixed 64-byte cells, self-describing)     │
