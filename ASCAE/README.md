@@ -230,21 +230,16 @@ Le système est conçu pour évoluer sans intervention humaine constante, mais s
 
 
 
----
+7. FORMALISME MATHÉMATIQUE & LOGIQUE
+ 
+    Fonction d'Expression Génique : $$E(g, C) = \begin{cases} 1 & \text{si } P(C) \land \neg I(C) \land B > Cost(g) \\0 & \text{sinon} \end{cases}$$
 
-## 7. FORMALISME MATHÉMATIQUE & LOGIQUE
+Où $g$ est le gène, $C$ le contexte, $P$ le promoteur, $I$ les inhibiteurs épigénétiques, et $B$ le budget disponible
 
-### Fonction d'Expression Génique
+Diversité Cognitive (Entropie de Shannon)Pour éviter la pensée unique (Monoculture) : $$S = - \sum_{i} p_i \log(p_i) \geq S_{min}$$
 
-Où  est le gène,  le contexte,  le promoteur,  les inhibiteurs épigénétiques, et  le budget disponible.
 
-### Diversité Cognitive (Entropie de Shannon)
-
-Pour éviter la pensée unique (Monoculture):
-
-Le système refuse de converger si l'entropie des stratégies  tombe sous un seuil critique.
-
----
+Le système refuse de converger si l'entropie des stratégies $S$ tombe sous un seuil critique.
 
 ## CONCLUSION
 
