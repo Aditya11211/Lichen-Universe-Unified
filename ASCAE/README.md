@@ -1,3 +1,25 @@
+# ASCAE
+### Architecture des Systèmes Cognitifs Auto-Évolutifs
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Status](https://img.shields.io/badge/Status-Alpha-orange.svg)]()
+[![Core](https://img.shields.io/badge/Core-Turing--Class-purple.svg)]()
+[![Memory](https://img.shields.io/badge/Memory-CRAID%20Distributed-green.svg)]()
+
+> **"L'IA n'est pas un script, c'est une biologie logicielle."**
+
+**ASCAE** est un framework révolutionnaire pour l'Intelligence Artificielle Générale (AGI), basé sur un **ADN Cognitif immuable**, une mémoire distribuée résiliente (**CRAID**) et un système immunitaire cognitif actif. Il remplace le paradigme probabiliste actuel par une approche structurelle et constitutionnelle.
+
+---
+
+## 🚀 Fonctionnalités Clés
+* **🧬 ADN Cognitif :** Code génétique définissant comportement et éthique.
+* **🛡️ Immunité Cognitive :** Détection et neutralisation des dérives en temps réel.
+* **🧠 Mémoire Immortelle (Phœnix) :** Persistance vectorielle distribuée (CRAID).
+* **⚖️ Gouvernance Cellulaire :** Économie interne de ressources pour prévenir les abus.
+
+---
+
 # LIVRE BLANC : ARCHITECTURE DES SYSTÈMES COGNITIFS AUTO-ÉVOLUTIFS (ASCAE)
 
 **Version :** 1.0 (Unifiée)  
