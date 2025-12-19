@@ -1,6 +1,3 @@
-Voici le contenu formaté proprement en Markdown. Tu peux copier le bloc ci-dessous et le coller directement dans ton éditeur de texte ou ta plateforme de documentation préférée.
-
-```markdown
 # LIVRE BLANC : ARCHITECTURE DES SYSTÈMES COGNITIFS AUTO-ÉVOLUTIFS (ASCAE)
 
 **Version :** 1.0 (Unifiée)  
