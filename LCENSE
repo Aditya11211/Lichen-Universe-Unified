@@ -24,8 +24,16 @@ Cette licence est établie pour garantir que le logiciel "Lichen Universe Unifie
    c) Les organisations à but non lucratif (OBNL) et ONG.
    d) Les projets Open Source communautaires ne générant pas de profit direct.
 
-3. RESTRICTIONS D'EXCLUSION (CLAUSE ANTI-MONOPOLE)
-   Il est strictement INTERDIT aux entités définies comme "GAFAM+" d'utiliser, de copier, de modifier, d'intégrer ou de distribuer ce Logiciel, en tout ou en partie, que ce soit pour un usage interne, commercial ou public. Toute licence accordée automatiquement est nulle et non avenue pour ces entités.
+3. RESTRICTIONS D'EXCLUSION (CLAUSE ANTI-MONOPOLE ÉTENDUE)
+   Il est strictement INTERDIT aux entités définies comme "GAFAM+" d'utiliser, de copier, de modifier, d'intégrer ou de distribuer ce Logiciel.
+
+   Cette interdiction s'étend "par contagion" à :
+   a) Toute entité détenue, en tout ou en partie (participation > 1%), par une entité GAFAM+.
+   b) Toute entité agissant comme prête-nom, société écran ou intermédiaire pour le compte d'une entité GAFAM+.
+   c) Les dirigeants, membres du conseil d'administration, et actionnaires de contrôle (détention > 5%) des entités GAFAM+.
+   d) Toute entité ou individu finançant ou étant financé majoritairement par des fonds provenant directement des entités GAFAM+ pour ce projet spécifique.
+
+   Toute licence accordée automatiquement est nulle et non avenue pour ces entités et individus.
 
 4. UTILISATION COMMERCIALE & REDISTRIBUTION PHILONOMIQUE (CLAUSE QUÉBEC)
    Toute entité commerciale (hors GAFAM+) souhaitant utiliser ce Logiciel pour générer des revenus (produits, services SaaS, consulting) doit accepter la condition suivante :
